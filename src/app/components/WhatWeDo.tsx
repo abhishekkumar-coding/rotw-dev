@@ -44,13 +44,13 @@ const WhatWeDo: React.FC = () => {
   return (
     <section className="bg-gray-200 py-16 border border-gray-600 px-4">
       <div className="container mx-auto text-center">
-        <h3 className="text-[#292B5B] text-2xl text-center underline-offset-8 underline font-semibold mb-6">
+        <h3 className="text-[#292B5B] text-2xl text-center underline-offset-8 underline decoration-[#FF0000] font-semibold mb-6">
           “What We Do”
         </h3>
         {/* <div className="w-16 h-1 bg-red-500 mx-auto mb-6"></div> */}
 
         {/* Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3  md:grid-cols-4 lg:grid-cols-5 gap-8 ">
           {items.map((item, index) => (
             <div key={index} className="flex flex-col items-center text-center">
               <div className="relative w-20 h-20 mb-4">
