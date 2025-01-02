@@ -9,7 +9,7 @@ const OurApproach: React.FC = () => {
         “Our Approach”
       </h3>
 
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+      <div className="container mx-auto flex flex-col py-10 md:flex-row items-center justify-between gap-8">
         <div className="relative w-full md:w-1/2">
           <div className="bg_line absolute w-[22vw] h-[38vw] border-[4px] border-[#c9c9c9] sm:-translate-x-10 md:translate-x-0 md:-translate-y-14 hidden md:block"></div>
 

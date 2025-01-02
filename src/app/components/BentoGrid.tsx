@@ -26,7 +26,7 @@ const BentoGrid: React.FC = () => {
       </div>
 
       <div
-        className="grid grid-cols-6 max-w-6xl mx-auto h-auto mt-28"
+        className="hidden md:grid  grid-cols-6 max-w-6xl mx-auto h-auto mt-28"
         style={{ gridAutoRows: "150px" }}
       >
         {images.map((image, index) => (
@@ -49,6 +49,19 @@ const BentoGrid: React.FC = () => {
           </div>
         ))}
       </div>
+
+      <div className="w-full columns-3  gap-0 md:hidden mx-auto">
+        {images.map((image, index) => (
+          <div key={index} className="mb-4 overflow-hidden rounded-lg relative">
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        ))}
+      </div>
+
     </section>
   );
 };

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative h-screen w-full">
+    <section className="relative h-screen w-full py-6">
       {/* Background Image */}
       <BackgroundImage src="/hero_bg.png" alt="Hero Background" />
 
