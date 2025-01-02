@@ -4,7 +4,6 @@ import Image from "next/image";
 
 const Carousel: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-
   const slides = [
     "/carousel-1.png",
     "/carousel-2.png",
@@ -22,9 +21,7 @@ const Carousel: React.FC = () => {
   };
 
   const handlePrev = () => {
-    setActiveIndex(
-      (prevIndex) => (prevIndex - 1 + slides.length) % slides.length
-    );
+    setActiveIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
   };
 
   const goToSlide = (index: number) => {
@@ -34,16 +31,15 @@ const Carousel: React.FC = () => {
   return (
     <div className="relative p-10 bg-white w-full">
       {/* Carousel Wrapper */}
-      <h3 className="text-[#292B5B] text-2xl text-center underline-offset-8 underline font-semibold mb-4">
+      <h3 className="text-[#292B5B] text-base md:text-2xl text-center underline-offset-8 underline decoration-[#FF0000] font-semibold mb-4">
         “10 Unique Experiences That Will Draw You to Russia”
       </h3>
       <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-              index === activeIndex ? "opacity-100" : "opacity-0"
-            }`}
+            className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === activeIndex ? "opacity-100" : "opacity-0"
+              }`}
           >
             <Image
               src={slide}
@@ -63,9 +59,8 @@ const Carousel: React.FC = () => {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full ${
-              index === activeIndex ? "bg-white" : "bg-gray-400"
-            }`}
+            className={`w-3 h-3 rounded-full ${index === activeIndex ? "bg-black" : "bg-gray-400"
+              }`}
             aria-label={`Slide ${index + 1}`}
           ></button>
         ))}

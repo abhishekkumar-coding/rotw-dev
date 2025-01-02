@@ -19,3 +19,24 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.bg_line {
+  position: absolute; /* Add this if .bg_line doesn't already have a positioning context */
+}
+.bg_line::after{
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 30%;
+  border-bottom: 4px solid #c9c9c9;
+  border-right: 4px solid #c9c9c9;
+  width: 22vw;
+  height: 50%;
+  background-color: white;
+  z-index: 2;
+}
+
+.slick-slide > div{
+  margin:  0 10px ;
+  overflow: hidden;
+}

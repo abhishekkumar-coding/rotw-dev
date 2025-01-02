@@ -1,20 +1,21 @@
 import React from "react";
 import Image from "next/image";
+import "../globals.css"
 
 const OurApproach: React.FC = () => {
   return (
     <section className="py-16 px-4 bg-white">
-      <h3 className="text-[#292B5B] text-2xl text-center underline-offset-8 underline font-semibold mb-4">
+      <h3 className="text-[#292B5B] text-2xl text-center underline-offset-8 underline decoration-[#FF0000] font-semibold mb-20">
         “Our Approach”
       </h3>
 
-      <div className="container mx-auto flex flex-col md:flex-row items-center gap-8">
-        {/* Image Section */}
+      <div className="container mx-auto flex flex-col py-10 md:flex-row items-center justify-between gap-8">
         <div className="relative w-full md:w-1/2">
-          <div className="absolute inset-0 border-2 border-gray-400 translate-x-0 translate-y-6 hidden md:block"></div>
-          <div className="relative w-full h-80 md:h-[400px]">
+          <div className="bg_line absolute w-[22vw] h-[38vw] border-[4px] border-[#c9c9c9] sm:-translate-x-10 md:translate-x-0 md:-translate-y-14 hidden md:block"></div>
+
+          <div className="relative h-80 md:h-[30vw]">
             <Image
-              src="/approach-image.png" // Replace with your image path
+              src="/approach-image.png" // Ensure your image is stored in the `public` folder
               alt="Our Approach"
               layout="fill"
               objectFit="contain"
