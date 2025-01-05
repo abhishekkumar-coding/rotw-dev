@@ -43,7 +43,7 @@ const Destinations: React.FC = () => {
 
                 <div className="relative hidden h-64 mt-8 md:flex items-center justify-center">
                     {/* Main Image (Image 1) - Centered */}
-                    <div className="relative md:w-4/5 lg:w-1/2 h-52 md:h-auto mb-20 md:mb-0 z-10">
+                    <div className="relative md:w-4/5 lg:w-2/3 h-52 md:h-auto mb-20 md:mb-0 z-10">
                         <Image
                             src="/destinations/img-d1.png"
                             alt="Image 1"
@@ -53,7 +53,7 @@ const Destinations: React.FC = () => {
                             priority
                         />
                     </div>
-                    <div className="absolute -top-[24%] lg:-top-[24%]  w-[11vw] h-[8vw] z-0">
+                    <div className="absolute -top-[10%%] lg:-top-[11%]  w-[8vw] h-[5vw] z-0">
                         <Image
                             src="/destinations/img-d1-1.png"
                             alt="Image 5"

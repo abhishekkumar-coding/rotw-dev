@@ -10,7 +10,7 @@ const TravelTips: React.FC = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
