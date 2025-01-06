@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import MobLanguageDropdown from "./MobLanguageDropdown";
 
 const Hero: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const Hero: React.FC = () => {
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+      <MobLanguageDropdown />
 
       {/* Content */}
       <div className="relative z-10 text-white px-6 sm:px-12 max-w-6xl mx-auto flex flex-col items-start justify-evenly h-full">
