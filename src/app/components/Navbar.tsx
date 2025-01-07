@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
               ? "absolute w-full left-0 top-20 bg-white z-10 block"
               : "absolute w-full left-0 top-20 bg-white z-10 hidden"
               } 
-  md:flex md:items-center md:static md:w-auto md:space-y-0 md:h-auto md:space-x-8 space-y-4 text-gray-700 text-lg`}
+  md:flex md:items-center md:static md:w-auto md:space-y-0 md:h-auto md:space-x-4 lg:space-x-6 space-y-4 text-gray-700 text-lg`}
           >
             <li className="text-center border-b border-gray-300 md:border-none pb-2 ">
               <a href="/about" className="text-[#292B5B] text-[20px] font-[500] hover:text-[#FF0000]  transform hover:scale-110 transition-all duration-300 ease-in-out">

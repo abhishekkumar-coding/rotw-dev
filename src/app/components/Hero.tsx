@@ -4,12 +4,11 @@ import MobLanguageDropdown from "./MobLanguageDropdown";
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative h-screen w-full py-6">
+    <section className="relative h-screen overflow-hidden w-full py-6">
       {/* Background Image */}
       <BackgroundImage src="/hero_bg.png" alt="Hero Background" />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       <MobLanguageDropdown />
 
       {/* Content */}

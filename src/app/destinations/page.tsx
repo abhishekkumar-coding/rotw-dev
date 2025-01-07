@@ -53,7 +53,7 @@ const Destinations: React.FC = () => {
                             priority
                         />
                     </div>
-                    <div className="absolute -top-[10%%] lg:-top-[11%]  w-[8vw] h-[5vw] z-0">
+                    <div className="absolute -top-[0%] lg:-top-[11%]  w-[8vw] h-[5vw] z-0">
                         <Image
                             src="/destinations/img-d1-1.png"
                             alt="Image 5"
@@ -64,7 +64,7 @@ const Destinations: React.FC = () => {
                     </div>
 
                     {/* Image 3 - Positioned to the top-left */}
-                    <div className="absolute -top-[18%] right-[0] lg:-top-[2%] lg:right-[5%] w-[12vw] h-[9vw] rounded-md z-0">
+                    <div className="absolute -top-[0%] right-[0] lg:-top-[10%] lg:-right-[10%] w-[10vw] h-[7vw] rounded-md z-0">
                         <Image
                             src="/destinations/img-d1-2.png"
                             alt="Image 3"
@@ -75,7 +75,7 @@ const Destinations: React.FC = () => {
                     </div>
 
                     {/* Image 2 - Positioned to the top-right */}
-                    <div className="absolute bottom-0 right-[2%] lg:right-[10%] w-[10vw] h-[5.4vw] z-10">
+                    <div className="absolute bottom-0 right-[2%] lg:right-[0%] lg:-bottom-4 w-[10vw] h-[5.4vw] z-10">
                         <Image
                             src="/destinations/img-d1-4.png"
                             alt="Image 2"
@@ -86,7 +86,7 @@ const Destinations: React.FC = () => {
                     </div>
 
                     {/* Image 4 - Positioned at the bottom-right */}
-                    <div className="absolute bottom-0 left-[5%] lg:left-[10%] z-10 w-[10vw] h-[8vw]">
+                    <div className="absolute bottom-0 left-[5%] lg:left-[5%] z-10 w-[9vw] h-[7vw]">
                         <Image
                             src="/destinations/img-d1-3.png"
                             alt="Image 4"
@@ -128,7 +128,7 @@ const Destinations: React.FC = () => {
                         St. Petersburg, founded in 1703, has a tumultuous history marked by name changes and significant events like the Communist Revolution and Nazi sieges. Once the capital of the Tsars, its Western European ambiance is evident in elegant palaces, grand cathedrals, and leafy parks. The city's rivers, canals, and picturesque bridges add to its charm. Known as the cultural capital of Russia and the "Venice of the North," St. Petersburg offers great shopping, dining, and nightlife. Don't miss the spectacular art collection at the Hermitage Museum. It's the largest city in the North, boasting 94 rivers and canals, and 342 bridges of various sizes and styles.                    </p></div>
                 <div className="relative hidden h-64 mt-8 md:flex items-center justify-center">
                     {/* Main Image (Image 1) - Centered */}
-                    <div className="relative md:w-4/5 lg:w-1/2 h-52 md:h-auto mb-20 md:mb-0 z-10">
+                    <div className="relative md:w-4/5 lg:w-2/3 h-52 md:h-auto mb-20 md:mb-0 z-10">
                         <Image
                             src="/destinations/img-d2.png"
                             alt="Image 1"
@@ -138,7 +138,7 @@ const Destinations: React.FC = () => {
                             priority
                         />
                     </div>
-                    <div className="absolute -top-[24%] lg:-top-[24%]  w-[11vw] h-[8vw] z-0">
+                    <div className="absolute -top-[0%] lg:-top-[11%]  w-[7vw] h-[5vw] z-0">
                         <Image
                             src="/destinations/img-d2-1.png"
                             alt="Image 5"
@@ -149,7 +149,7 @@ const Destinations: React.FC = () => {
                     </div>
 
                     {/* Image 3 - Positioned to the top-left */}
-                    <div className="absolute -top-[18%] left-[0] lg:-top-[2%] lg:left-[5%] w-[12vw] h-[9vw] rounded-md z-0">
+                    <div className="absolute -top-[0%] left-[0] lg:-top-[2%] lg:left-[0%] w-[10vw] h-[7vw] rounded-md z-0">
                         <Image
                             src="/destinations/img-d2-2.png"
                             alt="Image 3"
@@ -160,7 +160,7 @@ const Destinations: React.FC = () => {
                     </div>
 
                     {/* Image 2 - Positioned to the top-right */}
-                    <div className="absolute bottom-0 left-[2%] lg:left-[10%] w-[10vw] h-[5.4vw] z-10">
+                    <div className="absolute bottom-0 left-[2%] lg:left-[0%] w-[10vw] h-[5.4vw] z-10">
                         <Image
                             src="/destinations/img-d2-3.png"
                             alt="Image 2"
@@ -215,7 +215,7 @@ const Destinations: React.FC = () => {
 
                 <div className="relative hidden h-64 mt-8 md:flex items-center justify-center">
                     {/* Main Image (Image 1) - Centered */}
-                    <div className="relative md:w-4/5 lg:w-1/2 h-52 md:h-auto mb-20 md:mb-0 z-10">
+                    <div className="relative md:w-4/5 lg:w-2/3 h-52 md:h-auto mb-20 md:mb-0 z-10">
                         <Image
                             src="/destinations/img-d3.png"
                             alt="Image 1"
@@ -225,7 +225,7 @@ const Destinations: React.FC = () => {
                             priority
                         />
                     </div>
-                    <div className="absolute -top-[24%] lg:-top-[24%]  w-[11vw] h-[8vw] z-0">
+                    <div className="absolute -top-[0%] lg:-top-[11%]  w-[8vw] h-[6vw] z-0">
                         <Image
                             src="/destinations/img-d3-1.png"
                             alt="Image 5"
@@ -236,7 +236,7 @@ const Destinations: React.FC = () => {
                     </div>
 
                     {/* Image 3 - Positioned to the top-left */}
-                    <div className="absolute -top-[18%] right-[0] lg:-top-[2%] lg:right-[5%] w-[12vw] h-[9vw] rounded-md z-0">
+                    <div className="absolute -top-[0%] right-[0] lg:-top-[10%] lg:-right-[10%] w-[10vw] h-[7vw] rounded-md z-0">
                         <Image
                             src="/destinations/img-d3-2.png"
                             alt="Image 3"
@@ -247,7 +247,7 @@ const Destinations: React.FC = () => {
                     </div>
 
                     {/* Image 2 - Positioned to the top-right */}
-                    <div className="absolute bottom-0 right-[2%] lg:right-[10%] w-[10vw] h-[5.4vw] z-10">
+                    <div className="absolute bottom-0 right-[2%] lg:right-[0%] lg:-bottom-4 w-[10vw] h-[5.4vw] z-10">
                         <Image
                             src="/destinations/img-d3-3.png"
                             alt="Image 2"
@@ -258,7 +258,7 @@ const Destinations: React.FC = () => {
                     </div>
 
                     {/* Image 4 - Positioned at the bottom-right */}
-                    <div className="absolute bottom-0 left-[5%] lg:left-[10%] z-10 w-[10vw] h-[8vw]">
+                    <div className="absolute bottom-0 left-[5%] lg:left-[5%] z-10 w-[9vw] h-[7vw]">
                         <Image
                             src="/destinations/img-d3-4.png"
                             alt="Image 4"
@@ -299,7 +299,7 @@ const Destinations: React.FC = () => {
                     <p className="text-sm hidden md:block text-right md:text-base text-[#545454]">
                         Siberia, a vast and wild region of Russia, is renowned for its stunning natural landscapes, including endless forests, towering mountains, and the crystal-clear Lake Baikal, the world&rsquo;s deepest freshwater lake. It offers a unique blend of adventure and tranquility, with opportunities for trekking, wildlife exploration, and unforgettable journeys on the Trans-Siberian Railway. Siberia&rsquo;s vibrant cities, like Novosibirsk and Irkutsk, showcase a rich cultural heritage amidst modern development. Whether exploring in summer or experiencing its magical snow-covered winters, Siberia promises a truly unforgettable adventure.                                  </p></div>                <div className="relative hidden h-64 mt-8 md:flex items-center justify-center">
                     {/* Main Image (Image 1) - Centered */}
-                    <div className="relative md:w-4/5 lg:w-1/2 h-52 md:h-auto mb-20 md:mb-0 z-10">
+                    <div className="relative md:w-4/5 lg:w-2/3 h-52 md:h-auto mb-20 md:mb-0 z-10">
                         <Image
                             src="/destinations/img-d4.png"
                             alt="Image 1"
@@ -309,7 +309,7 @@ const Destinations: React.FC = () => {
                             priority
                         />
                     </div>
-                    <div className="absolute -top-[24%] lg:-top-[24%]  w-[11vw] h-[8vw] z-0">
+                    <div className="absolute -top-[0%] lg:-top-[11%]  w-[7vw] h-[5vw] z-0">
                         <Image
                             src="/destinations/img-d4-1.png"
                             alt="Image 5"
@@ -320,7 +320,7 @@ const Destinations: React.FC = () => {
                     </div>
 
                     {/* Image 3 - Positioned to the top-left */}
-                    <div className="absolute -top-[18%] left-[0] lg:-top-[2%] lg:left-[5%] w-[12vw] h-[9vw] rounded-md z-0">
+                    <div className="absolute -top-[0%] left-[0] lg:-top-[2%] lg:left-[0%] w-[10vw] h-[7vw] rounded-md z-0">
                         <Image
                             src="/destinations/img-d4-2.png"
                             alt="Image 3"
@@ -331,7 +331,7 @@ const Destinations: React.FC = () => {
                     </div>
 
                     {/* Image 2 - Positioned to the top-right */}
-                    <div className="absolute bottom-0 left-[2%] lg:left-[10%] w-[10vw] h-[5.4vw] z-10">
+                    <div className="absolute bottom-0 left-[2%] lg:left-[0%] w-[10vw] h-[5.4vw] z-10">
                         <Image
                             src="/destinations/img-d4-3.png"
                             alt="Image 2"
@@ -385,7 +385,7 @@ const Destinations: React.FC = () => {
 
                 <div className="relative hidden h-64 mt-8 md:flex items-center justify-center">
                     {/* Main Image (Image 1) - Centered */}
-                    <div className="relative md:w-4/5 lg:w-1/2 h-52 md:h-auto mb-20 md:mb-0 z-10">
+                    <div className="relative md:w-4/5 lg:w-2/3 h-52 md:h-auto mb-20 md:mb-0 z-10">
                         <Image
                             src="/destinations/img-d5.png"
                             alt="Image 1"
@@ -395,7 +395,7 @@ const Destinations: React.FC = () => {
                             priority
                         />
                     </div>
-                    <div className="absolute -top-[24%] lg:-top-[24%]  w-[11vw] h-[8vw] z-0">
+                    <div className="absolute -top-[0%] lg:-top-[11%]  w-[8vw] h-[5.5vw] z-0">
                         <Image
                             src="/destinations/img-d5-1.png"
                             alt="Image 5"
@@ -406,7 +406,7 @@ const Destinations: React.FC = () => {
                     </div>
 
                     {/* Image 3 - Positioned to the top-left */}
-                    <div className="absolute -top-[18%] right-[0] lg:-top-[2%] lg:right-[5%] w-[12vw] h-[9vw] rounded-md z-0">
+                    <div className="absolute -top-[0%] right-[0] lg:-top-[10%] lg:-right-[10%] w-[10vw] h-[7vw] rounded-md z-0">
                         <Image
                             src="/destinations/img-d5-2.png"
                             alt="Image 3"
@@ -417,7 +417,7 @@ const Destinations: React.FC = () => {
                     </div>
 
                     {/* Image 2 - Positioned to the top-right */}
-                    <div className="absolute bottom-0 right-[2%] lg:right-[10%] w-[10vw] h-[5.4vw] z-10">
+                    <div className="absolute bottom-0 right-[2%] lg:right-[0%] lg:-bottom-4 w-[10vw] h-[5.4vw] z-10">
                         <Image
                             src="/destinations/img-d5-3.png"
                             alt="Image 2"
@@ -428,7 +428,7 @@ const Destinations: React.FC = () => {
                     </div>
 
                     {/* Image 4 - Positioned at the bottom-right */}
-                    <div className="absolute bottom-0 left-[5%] lg:left-[10%] z-10 w-[10vw] h-[8vw]">
+                    <div className="absolute bottom-0 left-[5%] lg:left-[5%] z-10 w-[9vw] h-[7vw]">
                         <Image
                             src="/destinations/img-d5-4.png"
                             alt="Image 4"
@@ -470,7 +470,7 @@ const Destinations: React.FC = () => {
                         Kaliningrad, a unique Russian exclave nestled between Poland and Lithuania on the Baltic Sea, boasts a fascinating mix of history and culture. Once part of Prussia, it retains a blend of German and Russian influences, evident in its medieval forts, Gothic cathedrals, and amber museums. The city is famed for the Kaliningrad Cathedral and the nearby Curonian Spit, a UNESCO World Heritage Site known for its stunning dunes. With its rich heritage and coastal charm, Kaliningrad offers visitors a distinctive and memorable travel experience.</p></div>
                 <div className="relative hidden h-64 mt-8 md:flex items-center justify-center">
                     {/* Main Image (Image 1) - Centered */}
-                    <div className="relative md:w-4/5 lg:w-1/2 h-52 md:h-auto mb-20 md:mb-0 z-10">
+                    <div className="relative md:w-4/5 lg:w-2/3 h-52 md:h-auto mb-20 md:mb-0 z-10">
                         <Image
                             src="/destinations/img-d6.png"
                             alt="Image 1"
@@ -480,7 +480,7 @@ const Destinations: React.FC = () => {
                             priority
                         />
                     </div>
-                    <div className="absolute -top-[24%] lg:-top-[24%]  w-[11vw] h-[8vw] z-0">
+                    <div className="absolute -top-[0%] lg:-top-[11%]  w-[7vw] h-[5vw] z-0">
                         <Image
                             src="/destinations/img-d6-1.png"
                             alt="Image 5"
@@ -491,7 +491,7 @@ const Destinations: React.FC = () => {
                     </div>
 
                     {/* Image 3 - Positioned to the top-left */}
-                    <div className="absolute -top-[18%] left-[0] lg:-top-[2%] lg:left-[5%] w-[12vw] h-[9vw] rounded-md z-0">
+                    <div className="absolute -top-[0%] left-[0] lg:-top-[2%] lg:left-[0%] w-[10vw] h-[7vw] rounded-md z-0">
                         <Image
                             src="/destinations/img-d6-2.png"
                             alt="Image 3"
@@ -502,7 +502,7 @@ const Destinations: React.FC = () => {
                     </div>
 
                     {/* Image 2 - Positioned to the top-right */}
-                    <div className="absolute bottom-0 left-[2%] lg:left-[10%] w-[10vw] h-[5.4vw] z-10">
+                    <div className="absolute bottom-0 left-[2%] lg:left-[0%] w-[10vw] h-[5.4vw] z-10">
                         <Image
                             src="/destinations/img-d6-3.png"
                             alt="Image 2"
@@ -555,7 +555,7 @@ const Destinations: React.FC = () => {
                         Kazan, the capital of Russia&rsquo;s Republic of Tatarstan, is a city where European and Asian cultures beautifully converge. Known for its stunning architecture, it features landmarks like the iconic Kazan Kremlin, a UNESCO World Heritage Site, and the magnificent Qol Sharif Mosque. The city boasts a rich history of coexistence between Russian and Tatar cultures, making it a vibrant hub of diverse traditions, cuisine, and arts. Situated along the Volga River, Kazan offers a unique blend of ancient heritage and modern urban charm, making it a must-visit destination for travelers seeking a multicultural experience.</p></div>
                 <div className="relative hidden h-64 mt-8 md:flex items-center justify-center">
                     {/* Main Image (Image 1) - Centered */}
-                    <div className="relative md:w-4/5 lg:w-1/2 h-52 md:h-auto mb-20 md:mb-0 z-10">
+                    <div className="relative md:w-4/5 lg:w-2/3 h-52 md:h-auto mb-20 md:mb-0 z-10">
                         <Image
                             src="/destinations/img-d7.png"
                             alt="Image 1"
@@ -565,7 +565,7 @@ const Destinations: React.FC = () => {
                             priority
                         />
                     </div>
-                    <div className="absolute -top-[24%] lg:-top-[24%]  w-[11vw] h-[8vw] z-0">
+                    <div className="absolute -top-[0%] lg:-top-[11%]  w-[8vw] h-[5.5vw] z-0">
                         <Image
                             src="/destinations/img-d7-1.png"
                             alt="Image 5"
@@ -576,7 +576,7 @@ const Destinations: React.FC = () => {
                     </div>
 
                     {/* Image 3 - Positioned to the top-left */}
-                    <div className="absolute -top-[18%] right-[0] lg:-top-[2%] lg:right-[5%] w-[12vw] h-[9vw] rounded-md z-0">
+                    <div className="absolute -top-[0%] right-[0] lg:-top-[10%] lg:-right-[10%] w-[10vw] h-[7vw] rounded-md z-0">
                         <Image
                             src="/destinations/img-d7-2.png"
                             alt="Image 3"
@@ -587,7 +587,7 @@ const Destinations: React.FC = () => {
                     </div>
 
                     {/* Image 2 - Positioned to the top-right */}
-                    <div className="absolute bottom-0 right-[2%] lg:right-[10%] w-[10vw] h-[5.4vw] z-10">
+                    <div className="absolute bottom-0 right-[2%] lg:right-[0%] lg:-bottom-4 w-[10vw] h-[5.4vw] z-10">
                         <Image
                             src="/destinations/img-d7-3.png"
                             alt="Image 2"
@@ -598,7 +598,7 @@ const Destinations: React.FC = () => {
                     </div>
 
                     {/* Image 4 - Positioned at the bottom-right */}
-                    <div className="absolute bottom-0 left-[5%] lg:left-[10%] z-10 w-[10vw] h-[8vw]">
+                    <div className="absolute bottom-0 left-[5%] lg:left-[5%] z-10 w-[9vw] h-[7vw]">
                         <Image
                             src="/destinations/img-d7-4.png"
                             alt="Image 4"
@@ -639,7 +639,7 @@ const Destinations: React.FC = () => {
                     <p className="text-sm hidden md:block text-right md:text-base text-[#545454]">
                         The Golden Ring of Russia is a picturesque collection of ancient towns that showcase the country&rsquo;s rich history, architecture, and culture. Located northeast of Moscow, this route features stunning onion-domed churches, historic monasteries, and charming wooden houses. Iconic towns like Suzdal, Vladimir, and Yaroslavl offer a glimpse into medieval Russia&rsquo;s heritage and traditions. Surrounded by idyllic landscapes, the Golden Ring is a journey through the heart of Russia&rsquo;s cultural and spiritual legacy, perfect for history enthusiasts and nature lovers alike.</p></div>                <div className="relative hidden h-64 mt-8 md:flex items-center justify-center">
                     {/* Main Image (Image 1) - Centered */}
-                    <div className="relative md:w-4/5 lg:w-1/2 h-52 md:h-auto mb-20 md:mb-0 z-10">
+                    <div className="relative md:w-4/5 lg:w-2/3 h-52 md:h-auto mb-20 md:mb-0 z-10">
                         <Image
                             src="/destinations/img-d8.png"
                             alt="Image 1"
@@ -649,7 +649,7 @@ const Destinations: React.FC = () => {
                             priority
                         />
                     </div>
-                    <div className="absolute -top-[24%] lg:-top-[24%]  w-[11vw] h-[8vw] z-0">
+                    <div className="absolute -top-[0%] lg:-top-[11%]  w-[7vw] h-[5vw] z-0">
                         <Image
                             src="/destinations/img-d8-1.png"
                             alt="Image 5"
@@ -660,7 +660,7 @@ const Destinations: React.FC = () => {
                     </div>
 
                     {/* Image 3 - Positioned to the top-left */}
-                    <div className="absolute -top-[18%] left-[0] lg:-top-[2%] lg:left-[5%] w-[12vw] h-[9vw] rounded-md z-0">
+                    <div className="absolute -top-[0%] left-[0] lg:-top-[2%] lg:left-[0%] w-[10vw] h-[7vw] rounded-md z-0">
                         <Image
                             src="/destinations/img-d8-2.png"
                             alt="Image 3"
@@ -671,7 +671,7 @@ const Destinations: React.FC = () => {
                     </div>
 
                     {/* Image 2 - Positioned to the top-right */}
-                    <div className="absolute bottom-0 left-[2%] lg:left-[10%] w-[10vw] h-[5.4vw] z-10">
+                    <div className="absolute bottom-0 left-[2%] lg:left-[0%] w-[10vw] h-[5.4vw] z-10">
                         <Image
                             src="/destinations/img-d8-3.png"
                             alt="Image 2"
