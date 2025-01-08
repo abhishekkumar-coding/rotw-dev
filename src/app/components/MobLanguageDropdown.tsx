@@ -12,7 +12,7 @@ type Language = {
 const MobLanguageDropdown: React.FC = () => {
     const [selectedLanguage, setSelectedLanguage] = useState<string>("en");
     const [isOpen, setIsOpen] = useState<boolean>(false);
-    const [langTab, setLangTab] = useState<boolean>(false); 
+    const [langTab, setLangTab] = useState<boolean>(true); 
     console.log(langTab); 
 
     const toggleLangTab = () => {

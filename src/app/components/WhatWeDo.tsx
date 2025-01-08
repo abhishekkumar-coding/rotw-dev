@@ -53,7 +53,10 @@ const WhatWeDo: React.FC = () => {
         <div className="flex justify-center">
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
             {items.map((item, index) => (
-              <div key={index} className="flex flex-col items-center justify-center text-center">
+              <div
+                key={index}
+                className={`flex flex-col items-center justify-center text-center`}
+              >
                 <div className="relative w-20 h-20 mb-4">
                   <Image
                     src={item.src}
@@ -68,6 +71,7 @@ const WhatWeDo: React.FC = () => {
             ))}
           </div>
         </div>
+
 
       </div>
     </section>
