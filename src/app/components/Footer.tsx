@@ -4,10 +4,14 @@ import { FiFacebook } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FiLinkedin } from "react-icons/fi";
+import { CiPhone } from "react-icons/ci";
+import { CiMail } from "react-icons/ci";
+import { CiLocationOn } from "react-icons/ci";
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-[#292B5B] relative text-white text-center py-10 overflow-x-hidden">
+      {/* bg image */}
       <div className="absolute md:inset-0 md:h-full">
         <Image
           src="/footer_bg.png" // Replace with your background dots image
@@ -17,9 +21,9 @@ const Footer: React.FC = () => {
           className="opacity-60"
         />
       </div>
-      <div className="lg:w-[90%] lg:mx-auto px-4 lg:px-0">
+      <div className="lg:w-full lg:mx-0 md:w-[95%] md:mx-auto px-4 lg:px-0">
         {/* Top Section */}
-        <div className="md:flex md:flex-row w-full lg:px-8 flex flex-col md:items-start items-center lg:gap-32 gap-10">
+        <div className="md:flex md:flex-row w-full lg:px-8 flex flex-col md:items-start items-center lg:gap-20 gap-10 md:gap-36">
           <div className="flex flex-col lg:gap-28 md:gap-64 md:justify-between items-center md:items-start">
           {/* Logo and Social Media */}
             <div className="flex flex-col gap-2 items-center md:items-start">
@@ -33,8 +37,7 @@ const Footer: React.FC = () => {
                   priority // Ensures the logo loads quickly
                   className=""
                 />
-                {/* <p className="md:hidden block font-semibold mt-20">Your Gateway to Unforgettable Journeys</p>
-               <div className="h-[0.05rem] bg-white rounded-md md:hidden block w-[96%] mx-auto absolute bottom-0"/> */}
+
               </div>
                 <div className="absolute left-0 h-36 top-0 w-screen md:hidden block">
                   <Image
@@ -65,21 +68,11 @@ const Footer: React.FC = () => {
                 </a>
               </div>
             </div>
-
-            {/* Address */}
-            <div className="md:block hidden">
-              <h3 className="text-lg mb-3 text-left">Address:</h3>
-              <p className="text-left">
-                House 32 Premises, 4/2 Kalanchevskaya St.,
-                <br />
-                129090, Moscow, Russia
-              </p>
-            </div>
           </div>
-          <div className="md:flex md:flex-row md:justify-between md:w-full md:flex-wrap flex flex-col items-cente md:gap-0 gap-8">
+          <div className="md:flex md:flex-row md:justify-between md:w-full md:flex-wrap flex flex-col md:gap-0 gap-8">
             {/* Destinations */}
-            <div className="lg:basis-[20%] md:basis-[30%] md:mb-10 lg:mb-0">
-              <h3 className="md:font-extralight font-semibold md:tracking-[0.3rem] text-lg mb-4 md:text-left text-center">
+            <div className="lg:basis-[17%] md:basis-[20%] md:mb-10 lg:mb-0">
+              <h3 className="md:font-extralight text-[#FF0000] font-semibold md:tracking-[0.12rem] mb-4 md:text-left text-center">
                 Destinations
               </h3>
               <ul className="space-y-2 md:list-disc">
@@ -109,8 +102,8 @@ const Footer: React.FC = () => {
             </div>
 
             {/* Services */}
-            <div className="lg:basis-[20%] md:basis-[30%] md:mb-10 lg:mb-0">
-              <h3 className="md:font-extralight font-semibold md:tracking-[0.3rem] text-lg mb-4 md:text-left text-center">
+            <div className="lg:basis-[17%] md:basis-[30%] md:mb-10 lg:mb-0">
+              <h3 className="md:font-extralight text-[#FF0000] font-semibold md:tracking-[0.12rem] mb-4 md:text-left text-center">
                 Services
               </h3>
               <ul className="space-y-2 md:list-disc">
@@ -142,8 +135,8 @@ const Footer: React.FC = () => {
             </div>
 
             {/* Company */}
-            <div className="lg:basis-[20%] md:basis-[30%]">
-              <h3 className="md:font-extralight font-semibold md:tracking-[0.3rem] text-lg mb-4 md:text-left text-center">
+            <div className="lg:basis-[17%] md:basis-[30%]">
+              <h3 className="md:font-extralight text-[#FF0000] font-semibold md:tracking-[0.12rem] mb-4 md:text-left text-center">
                 Company
               </h3>
               <ul className="space-y-2 md:list-disc">
@@ -164,8 +157,8 @@ const Footer: React.FC = () => {
             </div>
 
             {/* Legal */}
-            <div className="lg:basis-[20%] md:basis-[30%]">
-              <h3 className="md:font-extralight font-semibold md:tracking-[0.3rem] text-lg mb-4 md:text-left text-center">
+            <div className="lg:basis-[17%] md:basis-[30%]">
+              <h3 className="md:font-extralight text-[#FF0000] font-semibold md:tracking-[0.12rem] mb-4 md:text-left text-center">
                 Legal
               </h3>
               <ul className="space-y-2 md:list-disc">
@@ -186,18 +179,26 @@ const Footer: React.FC = () => {
                 )}
               </ul>
             </div>
-            {/* Address */}
-            <div className="md:hidden block">
-              <div className="w-full mx-auto h-[0.05rem] bg-white rounded-md md:hidden block mb-6" />
-              <h3 className="text-lg mb-4 md:text-left text-center font-light tracking-[0.08rem]">
-                Address:
+            {/* Contact us */}
+            <div className="lg:basis-[17%] md:basis-[30%]">
+              <h3 className="md:font-extralight text-[#FF0000] font-semibold md:tracking-[0.12rem]  mb-4 md:text-left text-center">
+                Contact us
               </h3>
-              <p className="md:text-left text-center">
-                House 32 Premises, 4/2 Kalanchevskaya St.,
-                <br />
-                129090, Moscow, Russia
-              </p>
-              <div className="w-full mx-auto h-[0.05rem] bg-white rounded-md md:hidden block mt-6" />
+              <div className="flex flex-col md:items-start items-center gap-2">
+                <div className="flex gap-2 items-center">
+                  <CiPhone/>
+                  <p>+7-9096897125</p>
+                </div>
+                <div className="flex gap-2 items-center">
+                  <CiMail/>
+                  <p>inbound@rotwtravels.com</p>
+                </div>
+                <div className="flex gap-2 justify-center md:justify-start">
+                  <CiLocationOn className="mt-1"/>
+                  <p className="md:text-left md:max-w-[80%] text-center">House 32 Premises. 4/2,Kalanchevskaya St.,129090, Moscow, Russia</p>
+                </div>
+                <div className="w-full h-[1px] bg-white mt-14 mb-5 md:hidden block"/>
+              </div>
             </div>
 
             {/* social media icons */}
@@ -219,7 +220,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-10 md:w-[26%] w-full mx-auto text-sm text-gray-400">
+        <div className="mt-10 md:w-[31%] w-full mx-auto text-sm text-gray-400">
           <div className="w-full mx-auto h-[0.05rem] md:block hidden bg-white rounded-md" />
           <p className="my-1">Copyright © 2024 ROTW. All Rights Reserved.</p>
           <div className="w-full mx-auto h-[0.05rem] bg-white rounded-md md:block hidden" />
