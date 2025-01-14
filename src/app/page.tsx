@@ -6,6 +6,7 @@ import TravelTips from "./components/OurProducts";
 import Carousel from "./components/Carousel";
 import WhatWeDo from "./components/WhatWeDo";
 import BentoGrid from "./components/BentoGrid";
+import MobLanguageDropdown from "./components/MobLanguageDropdown";
 
 export default function Home() {
   return (
@@ -16,6 +17,6 @@ export default function Home() {
       <OurApproach />
       <BentoGrid />
       <TravelTips />
-    </>
+      </>
   );
 }

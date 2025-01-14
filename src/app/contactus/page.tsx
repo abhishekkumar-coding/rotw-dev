@@ -50,7 +50,7 @@ const ContactUs: React.FC = () => {
                 {/* Form Section */}
                 <form
                     action=""
-                    className="relative md:bottom-28 flex flex-col space-y-3 w-[60%] md:w-[40%] bg-white p-2  shadow-md"
+                    className="relative md:bottom-28 flex flex-col space-y-3 w-[60%] md:w-[40%] bg-white p-2  shadow-lg"
                 >
                     <h1 className="text-sm md:text-base tracking-widest">Request Assistance</h1>
                     {/* Contact Person */}
@@ -66,7 +66,7 @@ const ContactUs: React.FC = () => {
                             id="name"
                             placeholder="Name"
                             required
-                            className="p-1 border-black border rounded-md text-sm"
+                            className="p-2 border-black border rounded-md text-sm"
                         />
                     </div>
 
@@ -136,9 +136,9 @@ const ContactUs: React.FC = () => {
 
                     <button
                         type="submit"
-                        className=" text-black border border-black py-3 px-6 rounded-md text-sm md:text-base font-medium hover:bg-blue-700 hover:text-white"
+                        className="text-black border border-black py-2 md:py-3 px-4 md:px-6 rounded-md transition-all duration-150 text-sm md:text-base font-medium hover:bg-blue-700 hover:text-white focus:bg-blue-700 focus:text-white focus:ring-2 focus:ring-blue-500 focus:outline-none"
                     >
-                        Submit
+                        SUBMIT REQUEST
                     </button>
                 </form>
             </div>

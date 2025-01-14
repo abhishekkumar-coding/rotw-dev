@@ -36,7 +36,16 @@ body {
   z-index: 2;
 }
 
-.slick-slide > div{
-  margin:  0 10px ;
-  overflow: hidden;
+.slick-slide > div {
+  margin: 0 10px;
+  height: 100%;
+  z-index: 10;
+  overflow-y: auto;
+  transition: transform 0.3s ease; /* Smooth transition for scaling effect */
 }
+
+.slick-slide > div:hover {
+  transform: scale(1.025);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+

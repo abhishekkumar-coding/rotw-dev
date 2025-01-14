@@ -1,9 +1,8 @@
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import FullScreenBackground from "../components/FullScreenBackground";
 import { services } from "../constants/services";
 import { ImageWithText } from "../components/ImageWithText";
-
 
 
 const Services:React.FC=()=>{

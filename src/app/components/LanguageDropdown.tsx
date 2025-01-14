@@ -12,8 +12,8 @@ const LanguageDropdown: React.FC = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     const languages: Language[] = [
-        { code: "en", label: "EN", image: "/en.png" }, // English flag/icon
-        { code: "ru", label: "RU", image: "/ru.png" }, // Russian flag/icon
+        { code: "en", label: "EN", image: "/en.png" },
+        { code: "ru", label: "RU", image: "/ru.png" }, 
     ];
 
     const toggleDropdown = () => {
@@ -23,16 +23,16 @@ const LanguageDropdown: React.FC = () => {
     const selectLanguage = (lang: string) => {
         setSelectedLanguage(lang);
         setIsOpen(false);
-        // Add language-switching logic here (e.g., i18n.changeLanguage(lang))
     };
 
     const selectedLang = languages.find((lang) => lang.code === selectedLanguage);
 
     return (
         <div className="relative ml-7 inline-block text-left">
-            {/* Button */}
             <button
-                className="flex items-center w-fit justify-center rounded-md border-2 border-[#292B5B] bg-white p-1 text-xl font-medium text-gray-700 shadow-sm hover:bg-gray-100 focus:outline-none"
+                className={`flex items-center w-fit justify-center rounded-md border-2 ${
+                    selectedLang.code === "ru" ? "border-red-500" : "border-[#292B5B]"
+                  } bg-white p-1 text-xl font-medium text-gray-700 shadow-sm hover:bg-gray-100 focus:outline-none`}
                 onClick={toggleDropdown}
             >
                 {selectedLang && (
@@ -43,7 +43,6 @@ const LanguageDropdown: React.FC = () => {
                 )}
             </button>
 
-            {/* Dropdown */}
             {isOpen && (
                 <div
                     className="absolute right-0 mt-2 w-28 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 z-10"

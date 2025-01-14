@@ -39,7 +39,7 @@ const OurApproach: React.FC = () => {
             pass many of the savings to our customers offering a remarkable
             overall quality of service and travel experience.
           </p>
-          <button className="px-3 py-3 font-semibold text-slate-500 border-2 border-slate-400 hover:bg-red-500 hover:text-white rounded-md">
+          <button className="px-3 py-3 font-semibold text-slate-500 border-2 transition-all duration-500 border-slate-400 hover:border-[#FF0000] hover:bg-[#FF0000] hover:text-white rounded-md">
             Check why go with us
           </button>
         </div>

@@ -83,7 +83,7 @@ const TravelTips: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative mx-auto px-8 md:px-20">
+      <div className="relative mx-auto  px-8 md:px-20">
         {/* Heading */}
         <div className="text-left mb-12">
           <h2 className="text-3xl text-center md:text-4xl font-thin text-red-500">
@@ -99,7 +99,7 @@ const TravelTips: React.FC = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className={`p-3 ${card.bgColor} h-96 border border-gray-300 rounded-md flex-shrink-0 w-72`}
+              className={`p-3 ${card.bgColor} h-96 border border-gray-300  rounded-md flex-shrink-0 w-[150px]`}
             >
               <div className="w-20 h-20 mx-auto">
                 <Image
