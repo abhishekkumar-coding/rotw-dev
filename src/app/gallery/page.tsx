@@ -10,7 +10,7 @@ const Gallery: React.FC = () => {
         <div className="w-full">
             <FullScreenBackground imgsrc="/gallery/gallery.png" alt="gallery Img" h1="Gallery" text={text} />
 
-                <div className="w-full bg-[#292B5B12] mb-10 max-w-6xl mx-auto mt-20 md:mt-0">
+                <div className="w-full graybg mb-10 max-w-6xl mx-auto mt-20 md:mt-0">
 
                     {/* Content Section */}
                     <div className="flex  flex-col md:flex-row items-center md:items-center justify-center gap-6 w-full py-0">

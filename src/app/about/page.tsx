@@ -9,7 +9,7 @@ const AboutPage: React.FC = () => {
         <div className="w-full">
             <FullScreenBackground imgsrc="/about/about1.png" alt="About Img" h1="About us" text={text} />
 
-            <div className="w-full max-sm:mt-44 mx-auto flex flex-col items-center justify-between md:flex-row max-w-6xl mt-28 md:mt-10 bg-[#292B5B12] py-10 p ">
+            <div className="w-full max-sm:mt-44 mx-auto flex flex-col items-center justify-between md:flex-row max-w-6xl mt-28 md:mt-10 graybg py-10 p ">
                 <div className="w-full md:w-1/3 px-6 flex flex-col items-center space-y-5 justify-center mb-16">
                     <h1 className="text-xl text-center md:text-left mb-20 md:mb-0 text-[#292B5B] md:text-3xl font-extrabold">The perfect <span className="text-[#FF0000]">vacation</span> come true with our
                         Travel Agency</h1>
