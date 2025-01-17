@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import FullScreenBackground from "../components/FullScreenBackground";
+import AboutSection from "../components/AboutSection";
+import {aboutData} from "../constants/about"
 
 let text = "At ROTW Travel, we are passionate about showcasing the best of Russia through unforgettable travel experiences. With years of expertise, we have become a trusted leader in organizing exceptional journeys that highlight the rich culture, history, and natural beauty of this fascinating country. Our commitment to quality ensures that every trip is meticulously planned, combining comfort, safety, and authenticity. From exploring iconic landmarks like the Kremlin and St. Basil's Cathedral to discovering hidden gems off the beaten path, we create itineraries that cater to your interests. Our dedicated team of travel experts is here to provide personalized service, ensuring every detail of your trip is seamless. At ROTW Travel, we don’t just organize tours—we create memories that last a lifetime. Choose us to explore Russia with confidence and experience the journey of your dreams."
 
@@ -9,122 +11,10 @@ const AboutPage: React.FC = () => {
         <div className="w-full">
             <FullScreenBackground imgsrc="/about/about1.png" alt="About Img" h1="About us" text={text} />
 
-            <div className="w-full max-sm:mt-44 mx-auto flex flex-col items-center justify-between md:flex-row max-w-6xl mt-28 md:mt-10 graybg py-10 p ">
-                <div className="w-full md:w-1/3 px-6 flex flex-col items-center space-y-5 justify-center mb-16">
-                    <h1 className="text-xl text-center md:text-left mb-20 md:mb-0 text-[#292B5B] md:text-3xl font-extrabold">The perfect <span className="text-[#FF0000]">vacation</span> come true with our
-                        Travel Agency</h1>
-                    <div className="relative md:hidden h-64 mt-8 flex items-center justify-center">
-                        {/* Main Image (Image 1) - Centered */}
-                        <div className="relative w-full md:h-auto mb-20 md:mb-0 z-10">
-                            <Image
-                                src="/about/img1.png"
-                                alt="Image 1"
-                                layout="responsive"
-                                width={1}
-                                height={1}
-                                priority
-                            />
-                        </div>
-                        <div className="absolute max-sm:-top-[10%] -top-[26%]  w-[17vw] h-[12vw] z-0">
-                            <Image
-                                src="/about/img5.png"
-                                alt="Image 5"
-                                layout="fill"
-                                objectFit="cover"
-                                priority
-                            />
-                        </div>
-
-                        {/* Image 3 - Positioned to the top-left */}
-                        <div className="absolute max-sm:-top-[10%] -top-[20%] -right-[50%] w-[19vw] h-[14vw] rounded-md z-0">
-                            <Image
-                                src="/about/img3.png"
-                                alt="Image 3"
-                                layout="fill"
-                                objectFit="cover"
-                                priority
-                            />
-                        </div>
-
-                        {/* Image 2 - Positioned to the top-right */}
-                        <div className="absolute max-sm:bottom-14 bottom-0 -right-[50%] w-[25vw] h-[15.4vw] z-10">
-                            <Image
-                                src="/about/img2.png"
-                                alt="Image 2"
-                                layout="fill"
-                                objectFit="cover"
-                                priority
-                            />
-                        </div>
-
-                        {/* Image 4 - Positioned at the bottom-right */}
-                        <div className="absolute max-sm:bottom-16 bottom-0 -left-[40%] z-10 w-[20vw] h-[15vw]">
-                            <Image
-                                src="/about/img4.png"
-                                alt="Image 4"
-                                layout="fill"
-                                objectFit="cover"
-                                priority
-                            />
-                        </div>
-                    </div>
-                    <p className="text-sm md:text-base text-[#545454]">We are a team of experienced travel experts who specialize in planning and organizing unforgettable travel experiences for our clients with a wide range of travel services, including flight bookings, hotel reservations and more.</p></div>
-                <div className="relative hidden h-64 mt-8 md:flex items-center justify-center">
-                    {/* Main Image (Image 1) - Centered */}
-                    <div className="relative md:w-4/5 lg:w-2/3 h-52 md:h-auto mb-20 md:mb-0 z-10">
-                        <Image
-                            src="/about/img1.png"
-                            alt="Image 1"
-                            layout="responsive"
-                            width={1}
-                            height={1}
-                            priority
-                        />
-                    </div>
-                    <div className="absolute -top-[0%] lg:-top-[11%]  w-[8vw] h-[5.5vw] z-0">
-                        <Image
-                            src="/about/img5.png"
-                            alt="Image 5"
-                            layout="fill"
-                            objectFit="cover"
-                            priority
-                        />
-                    </div>
-
-                    {/* Image 3 - Positioned to the top-left */}
-                    <div className="absolute -top-[0%] right-[0] lg:-top-[10%] lg:-right-[10%] w-[10vw] h-[7vw] rounded-md z-0">
-                        <Image
-                            src="/about/img3.png"
-                            alt="Image 3"
-                            layout="fill"
-                            objectFit="cover"
-                            priority
-                        />
-                    </div>
-
-                    {/* Image 2 - Positioned to the top-right */}
-                    <div className="absolute bottom-0 right-[2%] lg:right-[0%] lg:-bottom-4 w-[10vw] h-[5.4vw] z-10">
-                        <Image
-                            src="/about/img2.png"
-                            alt="Image 2"
-                            layout="fill"
-                            objectFit="cover"
-                            priority
-                        />
-                    </div>
-
-                    {/* Image 4 - Positioned at the bottom-right */}
-                    <div className="absolute bottom-0 left-[5%] lg:left-[5%] z-10 w-[9vw] h-[7vw]">
-                        <Image
-                            src="/about/img4.png"
-                            alt="Image 4"
-                            layout="fill"
-                            objectFit="cover"
-                            priority
-                        />
-                    </div>
-                </div>
-            </div>
+            <AboutSection 
+        heading1={aboutData.heading1}
+        para={aboutData.para}
+        images={aboutData.images}/>
             <div>
                 <div className="w-full max-w-6xl mx-auto my-10">
                     {/* Heading */}

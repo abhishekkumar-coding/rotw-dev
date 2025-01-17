@@ -8,12 +8,9 @@ import LanguageDropdown from "./LanguageDropdown";
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-
-
   return (
     <nav className="bg-white shadow-md sticky top-0 py-1 z-50">
       <div className="container mx-auto max-w-6xl  py-3 flex justify-between items-center">
-        {/* Logo */}
 
         <div className="relative w-32 h-12 md:w-40 md:h-16">
           <Link href="/">
@@ -31,7 +28,7 @@ const Navbar: React.FC = () => {
           onClick={() => setIsOpen(!isOpen)}
           className="text-gray-700 md:hidden"
         >
-          <div className="relative w-10 h-10">
+          <div className="absolute right-0 bottom-5 w-10 h-10">
             <Image
               src="/hameburger.png"
               alt="hamburger"
@@ -40,7 +37,7 @@ const Navbar: React.FC = () => {
             />
           </div>
         </button>
-        <div className="hidden md:flex justify-between  items-center">
+        <div className="md:flex justify-between items-center">
           <ul
             className={`${isOpen
               ? "absolute w-full left-0 top-20 bg-white z-10 block"
@@ -128,7 +125,8 @@ const Navbar: React.FC = () => {
             </li>
 
           </ul>
-            <LanguageDropdown/>
+          <div className="hidden md:block">
+            <LanguageDropdown /></div>
         </div>
       </div>
     </nav>
