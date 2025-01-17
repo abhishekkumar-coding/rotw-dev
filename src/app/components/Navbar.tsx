@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import LanguageDropdown from "./LanguageDropdown";
+import clsx from "clsx";
 
 
 const Navbar: React.FC = () => {
@@ -28,7 +29,10 @@ const Navbar: React.FC = () => {
         </div>
 
         <button
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => {setIsOpen(!isOpen)
+            console.log("open");
+            
+          }}
           className="text-gray-700 md:hidden"
         >
           <div className="relative w-10 h-10">
@@ -42,11 +46,9 @@ const Navbar: React.FC = () => {
         </button>
         <div className="hidden md:flex justify-between  items-center">
           <ul
-            className={`${isOpen
+            className={clsx("md:flex md:items-center md:static md:w-auto md:space-y-0 md:h-auto md:space-x-4 lg:space-x-6 space-y-4 text-gray-700 text-lg",isOpen
               ? "absolute w-full left-0 top-20 bg-white z-10 block"
-              : "absolute w-full left-0 top-20 bg-white z-10 hidden"
-              } 
-  md:flex md:items-center md:static md:w-auto md:space-y-0 md:h-auto md:space-x-4 lg:space-x-6 space-y-4 text-gray-700 text-lg`}
+              : "absolute w-full left-0 top-20 bg-white z-10 hidden")}
           >
             <li className="text-center border-b border-gray-300 md:border-none pb-2 ">
               <a href="/about" className="text-[#292B5B] text-[20px] font-[500] hover:text-[#FF0000]  transform hover:scale-110 transition-all duration-300 ease-in-out">
