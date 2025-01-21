@@ -1,51 +1,28 @@
 import React from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const WhatWeDo: React.FC = () => {
+
+  const t = useTranslations("whatwedo")
+
   const items = [
-    {
-      src: "/handcrafted.png", // Replace with the correct paths to your images
-      title: "Handcrafted Travel Journeys",
-    },
-    {
-      src: "/meeting.png",
-      title: "MICE and conference organization",
-    },
-    {
-      src: "/railway.png",
-      title: "Trans-Siberian Railway",
-    },
-    {
-      src: "/excursions1.png",
-      title: "Custom-Curated Excursions",
-    },
-    {
-      src: "/yacht.png",
-      title: "River cruises",
-    },
-    {
-      src: "/cuisine.png",
-      title: "Classic Russian Cuisine with a Unique Twist",
-    },
-    {
-      src: "/visa.png",
-      title: "Visa support",
-    },
-    {
-      src: "/addservice.png",
-      title: "Additional services on request",
-    },
-    {
-      src: "/24hours.png",
-      title: "24/7 support",
-    },
+    { src: "/handcrafted.png", title: t("items.handcraftedJourneys.title") },
+    { src: "/meeting.png", title: t("items.mice.title") },
+    { src: "/railway.png", title: t("items.railway.title") },
+    { src: "/excursions1.png", title: t("items.excursions.title") },
+    { src: "/yacht.png", title: t("items.cruises.title") },
+    { src: "/cuisine.png", title: t("items.cuisine.title") },
+    { src: "/visa.png", title: t("items.visa.title") },
+    { src: "/addservice.png", title: t("items.addServices.title") },
+    { src: "/24hours.png", title: t("items.support.title") }
   ];
 
   return (
     <section className="bg-gray-200 py-16 border border-gray-600 px-4">
       <div className="container mx-auto text-center">
         <h3 className="text-[#292B5B] text-2xl text-center underline-offset-8 underline decoration-[#FF0000] font-semibold mb-6">
-          “What We Do”
+          {t("heading")}
         </h3>
         {/* <div className="w-16 h-1 bg-red-500 mx-auto mb-6"></div> */}
 

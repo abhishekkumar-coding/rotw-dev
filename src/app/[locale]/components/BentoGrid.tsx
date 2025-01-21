@@ -1,7 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const BentoGrid: React.FC = () => {
+  const t = useTranslations("bentoGrid")
   const images = [
     { src: "/bento/img1.png", alt: "Image 1", colSpan: "col-span-1", rowSpan: "row-span-1", top: 120 },
     { src: "/bento/img2.png", alt: "Image 2", colSpan: "col-span-1", rowSpan: "row-span-1", top: 30 },
@@ -20,9 +22,9 @@ const BentoGrid: React.FC = () => {
   return (
     <section className="bg-gray-200 py-20">
       <div className="container mx-auto text-left mb-6">
-        <h3 className="text-gray-700 text-lg">Tourists talk about Russia</h3>
-        <h2 className="text-3xl font-thin text-red-500">#VisitRussia</h2>
-        <p className="text-gray-500">Share the best of Russia on our networks</p>
+        <h3 className="text-gray-700 text-lg">{t("heading")}</h3>
+        <h2 className="text-3xl font-thin text-red-500">{t("hashtag")}</h2>
+        <p className="text-gray-500">{t("description")}</p>
       </div>
 
       <div

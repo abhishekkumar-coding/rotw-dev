@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
 
 type Language = {
     code: string;
@@ -8,12 +9,14 @@ type Language = {
 };
 
 const LanguageDropdown: React.FC = () => {
-    const [selectedLanguage, setSelectedLanguage] = useState<string>("en");
+    const router = useRouter();
+    const pathname = usePathname();
+    const currentLocale = pathname.split("/")[1] || "en";
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     const languages: Language[] = [
         { code: "en", label: "EN", image: "/en.png" },
-        { code: "ru", label: "RU", image: "/ru.png" }, 
+        { code: "ru", label: "RU", image: "/ru.png" },
     ];
 
     const toggleDropdown = () => {
@@ -21,26 +24,22 @@ const LanguageDropdown: React.FC = () => {
     };
 
     const selectLanguage = (lang: string) => {
-        setSelectedLanguage(lang);
         setIsOpen(false);
+        const newPath = `/${lang}${pathname.replace(`/${currentLocale}`, "")}`;
+        router.push(newPath);
     };
 
-    const selectedLang = languages.find((lang) => lang.code === selectedLanguage);
+    const selectedLang = languages.find((lang) => lang.code === currentLocale) || languages[0];
 
     return (
         <div className="relative ml-7 inline-block text-left">
             <button
-                className={`flex items-center w-fit justify-center rounded-md border-2 ${
-                    selectedLang.code === "ru" ? "border-red-500" : "border-[#292B5B]"
-                  } bg-white p-1 text-xl font-medium text-gray-700 shadow-sm hover:bg-gray-100 focus:outline-none`}
+                className={`flex items-center w-fit justify-center rounded-md border-2 ${selectedLang.code === "ru" ? "border-red-500" : "border-[#292B5B]"
+                    } bg-white p-1 text-xl font-medium text-gray-700 shadow-sm hover:bg-gray-100 focus:outline-none`}
                 onClick={toggleDropdown}
             >
-                {selectedLang && (
-                    <>
-                        <Image src={selectedLang.image} alt={selectedLang.label} width={30} height={30} />
-                        <span className="ml-2">{selectedLang.label}</span>
-                    </>
-                )}
+                <Image src={selectedLang.image} alt={selectedLang.label} width={30} height={30} />
+                <span className="ml-2">{selectedLang.label}</span>
             </button>
 
             {isOpen && (

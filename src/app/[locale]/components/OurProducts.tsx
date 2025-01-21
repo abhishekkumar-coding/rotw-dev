@@ -5,8 +5,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "../globals.css"
+import { useTranslations } from "next-intl";
 
 const TravelTips: React.FC = () => {
+
+  const t =useTranslations("cards")
+
   const settings = {
     dots: true,
     infinite: true,
@@ -35,37 +39,32 @@ const TravelTips: React.FC = () => {
   const cards = [
     {
       image: "/ourProd1.png",
-      title: "AIR TICKETS",
-      description:
-        "ROTW offers hassle-free air ticketing services with competitive rates, personalized assistance, and 24/7 support. Whether for domestic or international travel, we ensure convenient routes and smooth planning.",
+      title: t("airTickets.title"),
+      description: t("airTickets.description"),
       bgColor: "bg-[#E1E1E1]",
     },
     {
       image: "/ourProd2.png",
-      title: "HOTELS",
-      description:
-        "ROTW provides reliable hotel booking services, offering a wide range of accommodations to suit all budgets and preferences. Enjoy stress-free stays for business and leisure travelers.",
+      title: t("hotels.title"),
+      description: t("hotels.description"),
       bgColor: "bg-white",
     },
     {
       image: "/ourProd3.png",
-      title: "HOLIDAY & TOURS",
-      description:
-        "ROTW provides tailored holiday and tour packages, handling transport, accommodations, and guided tours for a seamless, unforgettable travel experience.",
+      title: t("holidayTours.title"),
+      description: t("holidayTours.description"),
       bgColor: "bg-gray-200",
     },
     {
       image: "/ourProd4.png",
-      title: "VISA",
-      description:
-        "ROTW offers expert VISA services, simplifying the application process for travelers. Trust us for efficient processing and hassle-free journeys.",
+      title: t("visa.title"),
+      description: t("visa.description"),
       bgColor: "bg-white",
     },
     {
       image: "/ourProd5.png",
-      title: "INSURANCE",
-      description:
-        "ROTW provides comprehensive travel insurance services, offering coverage for unexpected events during your trip. Our plans ensure peace of mind with protection against cancellations, medical emergencies, and more.",
+      title: t("insurance.title"),
+      description: t("insurance.description"),
       bgColor: "bg-white",
     },
   ];
@@ -87,10 +86,10 @@ const TravelTips: React.FC = () => {
         {/* Heading */}
         <div className="text-left mb-12">
           <h2 className="text-3xl text-center md:text-4xl font-thin text-red-500">
-            Explore Our Offerings
+            {t("heading")}
           </h2>
           <p className="text-sm text-center text-gray-800 mt-2">
-            Our Products
+            {t("subheading")}
           </p>
         </div>
 

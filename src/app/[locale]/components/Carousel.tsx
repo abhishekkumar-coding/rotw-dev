@@ -1,8 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const Carousel: React.FC = () => {
+   const t = useTranslations("carousel")
   const [activeIndex, setActiveIndex] = useState(0);
   const slides = [
     "/carousel-1.png",
@@ -32,8 +34,7 @@ const Carousel: React.FC = () => {
     <div className="relative p-10 bg-white w-full">
       {/* Carousel Wrapper */}
       <h3 className="text-[#292B5B] text-base md:text-2xl text-center underline-offset-8 underline decoration-[#FF0000] font-semibold mb-4">
-        “10 Unique Experiences That Will Draw You to Russia”
-      </h3>
+{t("heading")}      </h3>
       <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
         {slides.map((slide, index) => (
           <div
