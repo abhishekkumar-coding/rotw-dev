@@ -1,0 +1,238 @@
+{
+    "navbar": {
+        "about": "About Us",
+        "destinations": "Destinations",
+        "services": "Services",
+        "gallery": "Gallery",
+        "contact": "Contact Us",
+        "destiniDropdown": {
+            "beach": "Beach",
+            "mountain": "Mountain",
+            "city": "City",
+            "cruise": "Cruise",
+            "desert": "Desert",
+            "historical": "Historical",
+            "jungle": "Jungle",
+            "island": "Island",
+            "safari": "Safari"
+        },
+        "servicesDropdown":{
+            "hotel":"Hotel Booking",
+            "flight" : "Flight Booking",
+            "visa" : "Visa Service",
+            "car" : "Car Rental",
+            "tour" : "Tour Guides",
+            "travel" : "Travel Insurance"
+        }
+    },
+    "heroSection": {
+        "heroBgAlt": "Hero Background",
+        "endless": "Endless",
+        "discovery": "Discovery",
+        "of": "of",
+        "russiaAlt": "Russia",
+        "welcome": "Welcome to Russia, the world's largest nation,",
+        "largestNation": "s largest nation",
+        "celebrated": "celebrated for its breathtaking nature, rich cultural",
+        "diversity": "diversity, storied history, and scientific",
+        "achievements": "achievements",
+        "heritageSites": "Cultural and Archaeological Heritage Sites for Tourism",
+        "siteCount": "155.5 thousand"
+    },
+    "carousel": {
+        "heading": "“10 Unique Experiences That Will Draw You to Russia”"
+    },
+    "whatwedo": {
+        "heading": "What We Do",
+        "items": {
+            "handcraftedJourneys": {
+                "title": "Handcrafted Travel Journeys"
+            },
+            "mice": {
+                "title": "MICE and conference organization"
+            },
+            "railway": {
+                "title": "Trans-Siberian Railway"
+            },
+            "excursions": {
+                "title": "Custom-Curated Excursions"
+            },
+            "cruises": {
+                "title": "River cruises"
+            },
+            "cuisine": {
+                "title": "Classic Russian Cuisine with a Unique Twist"
+            },
+            "visa": {
+                "title": "Visa support"
+            },
+            "addServices": {
+                "title": "Additional services on request"
+            },
+            "support": {
+                "title": "24/7 support"
+            }
+        }
+    },
+    "ourApproach": {
+        "heading": "“Our Approach”",
+        "subtitle": "Your adventure, our passion – Let’s plan together",
+        "description": "We cared from the very start of our company when we helped around-the-world travelers to cross Siberia, and we continue to work with simple, yet powerful principles. We work with the very best suppliers, with the best hotels, with best guides, with the best transportation companies. We negotiate the very best rates, and we pass many of the savings to our customers offering a remarkable overall quality of service and travel experience.",
+        "buttonText": "Check why go with us",
+        "imageAlt": "Our Approach"
+    },
+    "bentoGrid": {
+        "heading": "Tourists talk about Russia",
+        "hashtag": "#VisitRussia",
+        "description": "Share the best of Russia on our networks"
+    },
+    "cards": {
+        "heading": "Explore Our Offerings",
+        "subheading": "Our Products",
+        "airTickets": {
+            "title": "AIR TICKETS",
+            "description": "ROTW offers hassle-free air ticketing services with competitive rates, personalized assistance, and 24/7 support. Whether for domestic or international travel, we ensure convenient routes and smooth planning."
+        },
+        "hotels": {
+            "title": "HOTELS",
+            "description": "ROTW provides reliable hotel booking services, offering a wide range of accommodations to suit all budgets and preferences. Enjoy stress-free stays for business and leisure travelers."
+        },
+        "holidayTours": {
+            "title": "HOLIDAY & TOURS",
+            "description": "ROTW provides tailored holiday and tour packages, handling transport, accommodations, and guided tours for a seamless, unforgettable travel experience."
+        },
+        "visa": {
+            "title": "VISA",
+            "description": "ROTW offers expert VISA services, simplifying the application process for travelers. Trust us for efficient processing and hassle-free journeys."
+        },
+        "insurance": {
+            "title": "INSURANCE",
+            "description": "ROTW provides comprehensive travel insurance services, offering coverage for unexpected events during your trip. Our plans ensure peace of mind with protection against cancellations, medical emergencies, and more."
+        }
+    },
+    "gallery": {
+        "heading": "Gallery",
+        "description": "Explore the beauty of Russia through our curated gallery, showcasing stunning destinations and unforgettable moments from our journeys. From iconic landmarks to hidden gems, these snapshots capture the essence of our travel experiences. Let these images inspire your next adventure with ROTW Travel. Start dreaming of your Russian getaway today!"
+    },
+    "contact": {
+        "heading": "Contact us",
+        "description": "Reach out to ROTW Travel to start planning your perfect Russian adventure! Our dedicated team is here to assist you with personalized itineraries, travel inquiries, and any support you need. Whether you’re looking for advice or ready to book, we’re just a call or message away. Let’s make your dream journey to Russia a reality!",
+        "requestAssistance": "Request Assistance",
+        "contactPerson": "Contact Person",
+        "namePlaceholder": "Name",
+        "emailplaceholder" : "Email",
+        "request":"Your request here...",
+        "email": "Email",
+        "startDate": "Start Date",
+        "specialRequest": "Special Request",
+        "byclick": "By clicking",
+        "sendRequest": "SEND REQUEST,",
+        "iAgry": "I agree to the processing of personal data in accordance with the",
+        "privacyPolicy": "Privacy Policy",
+        "submitRequest": "SUBMIT REQUEST",
+        "emailPrompt": "For general inquiries, please email",
+        "phonePrompt": "You can call us every day"
+    },
+    "about": {
+        "heading": "About",
+        "description": "At ROTW Travel, we are passionate about showcasing the best of Russia through unforgettable travel experiences. With years of expertise, we have become a trusted leader in organizing exceptional journeys that highlight the rich culture, history, and natural beauty of this fascinating country. Our commitment to quality ensures that every trip is meticulously planned, combining comfort, safety, and authenticity. From exploring iconic landmarks like the Kremlin and St. Basil's Cathedral to discovering hidden gems off the beaten path, we create itineraries that cater to your interests. Our dedicated team of travel experts is here to provide personalized service, ensuring every detail of your trip is seamless. At ROTW Travel, we don’t just organize tours—we create memories that last a lifetime. Choose us to explore Russia with confidence and experience the journey of your dreams.",
+        "stories": "Stories from",
+        "satisfied": "Satisfied",
+        "customers": "Customers",
+        "para": "My experience with ROTW Travel was amazing! The trip was perfectly organized, with a personalized itinerary that included both famous landmarks and hidden gems. The knowledgeable guides and excellent attention to detail made my Russian vacation unforgettable.",
+        "name": "Kushal Kumar",
+        "cName": "INDIA",
+        "heading1": "The perfect vacation come true with our Travel Agency",
+        "sectionPara": "We are a team of experienced travel experts who specialize in planning and organizing unforgettable travel experiences for our clients with a wide range of travel services, including flight bookings, hotel reservations and more"
+      
+    },
+    "destinationsData": {
+        "text": "Discover the magic of Russia with ROTW Travel's curated destinations. From the iconic cities of Moscow and St. Petersburg to the serene landscapes of the Golden Ring and beyond, we offer journeys to suit every traveler. Explore the history, culture, and natural beauty of this vast country. Let us guide you to unforgettable experiences in Russia's most remarkable locations!",
+        "heading": "Destinations",
+        "top": "Top",
+        "destination": "Destinations",
+        "toVisit": "to Visit in Russia",
+        "destination1": {
+            "heading1": "MOSCOW",
+            "para": "Moscow, the majestic capital of Russia, exudes grandeur and epic scale. Highlights include the Kremlin, Red Square, and the awe-inspiring St. Basil's Cathedral. Monuments, museums, and statues commemorate its Soviet past, with the Bunker-42 Cold War museum standing out. With over 600 churches, orthodoxy is prevalent, symbolized by gold-plated domes. Moscow's renowned performing arts scene offers unforgettable ballet, circus, and opera performances. The city also boasts fantastic restaurants, trendy bars, and vibrant nightlife."
+        },
+        "destination2": {
+            "heading1": "SAINT PETERSBURG",
+            "para": "St. Petersburg, founded in 1703, has a tumultuous history marked by name changes and significant events, such as the Communist Revolution and Nazi sieges. Once the capital of the Tsars, the city's Western European ambiance is evident in its elegant palaces, grand cathedrals, and leafy parks. The rivers, canals, and picturesque bridges add to the charm of the city. Known as the cultural capital of Russia and the 'Venice of the North,' St. Petersburg offers great shopping, dining, and nightlife."
+        },
+        "destination3": {
+            "heading1": "SOCHI",
+            "para": "Lying on the Black Sea, Sochi hosted the 2014 Winter Olympics. As such, a lot of investment went into improving the city's facilities and tourist services. Russia's most famous seaside resort, it has a lovely waterfront promenade - home to some great nightclubs and restaurants. There are also some delightful parks throughout the city. The sea is warm to swim in, and Sochi has a nice climate."
+        },
+        "destination4": {
+            "heading1": "SIBERIA",
+            "para": "Siberia, a vast and wild region of Russia, is renowned for its stunning natural landscapes, including endless forests, towering mountains, and the crystal-clear Lake Baikal, the world’s deepest freshwater lake. It offers a unique blend of adventure and tranquility, with opportunities for trekking, wildlife exploration, and unforgettable journeys on the Trans-Siberian Railway."
+        },
+        "destination5": {
+            "heading1": "VLADIVOSTOK",
+            "para": "Vladivostok, Russia's vibrant Pacific port city, is a captivating blend of stunning coastal beauty and rich cultural heritage. Known for its dramatic hills, picturesque harbors, and iconic Golden Bridge, it offers breathtaking views and a dynamic urban vibe. As the terminus of the legendary Trans-Siberian Railway, Vladivostok connects travelers to the heart of Russia and beyond."
+        },
+        "destination6": {
+            "heading1": "KALININGRAD",
+            "para": "Kaliningrad, a unique Russian exclave nestled between Poland and Lithuania on the Baltic Sea, boasts a fascinating mix of history and culture. Once part of Prussia, it retains a blend of German and Russian influences, evident in its medieval forts, Gothic cathedrals, and amber museums."
+        },
+        "destination7": {
+            "heading1": "KAZAN",
+            "para": "Kazan, the capital of Russia’s Republic of Tatarstan, is a city where European and Asian cultures beautifully converge. Known for its stunning architecture, it features landmarks like the iconic Kazan Kremlin, a UNESCO World Heritage Site, and the magnificent Qol Sharif Mosque."
+        },
+        "destination8": {
+            "heading1": "GOLDEN RING",
+            "para": "The Golden Ring of Russia is a picturesque collection of ancient towns that showcase the country’s rich history, architecture, and culture. Located northeast of Moscow, this route features stunning onion-domed churches, historic monasteries, and charming wooden houses."
+        }
+    },
+    "services":{
+        "heading":"Services",
+        "text":"At ROTW Travel, we offer a wide range of services to ensure your journey through Russia is seamless and unforgettable. From custom itineraries and expert guides to comfortable accommodations and hassle-free transportation, we handle every detail with care. Whether you’re traveling for leisure, business, or adventure, our dedicated team is here to make your trip extraordinary. Experience the best of Russia with our personalized services!",
+        "service1":{
+            "blueheading":"Expertly Designed Our",
+            "redheading":"Travel Services",
+            "paraheading":"INBOUD TOUR OPERATOR",
+            "text":"ROTW Travel is a trusted inbound tour operator specializing in creating unforgettable journeys across Russia. With a deep understanding of the country’s culture, history, and landscapes, we craft tailored itineraries for travelers from around the globe. Our services include seamless logistics, expert guides, and curated experiences that showcase the best of Russia’s iconic landmarks and hidden gems. Whether it's leisure travel, corporate groups, or special interest tours, we cater to diverse needs with precision and care. As a locally managed company, we offer unparalleled insights and competitive pricing. Partner with us for a reliable, hassle-free, and enriching travel experience in Russia. Explore the wonders of this vast nation with ROTW Travel!"
+        },
+        "service2":{
+            "text":"ROTW Travel offers reliable and efficient airport services to ensure a smooth start and end to your journey in Russia. Our services include personalized meet-and-greet assistance, comfortable airport transfers, and guidance through arrivals and departures. Whether you’re traveling solo or in a group, we provide hassle-free transportation to your destination with experienced drivers and well-maintained vehicles. Our team monitors flight schedules to accommodate any changes and minimize waiting times. With ROTW Travel, you can count on punctuality, comfort, and exceptional service. Let us take care of your airport needs, so you can focus on enjoying your trip. Travel with ease, from touchdown to takeoff!",
+            "paraheading":"AIRPORT SERVICE"
+        },
+        "service3":{
+            "text":"ROTW Travel specializes in organizing exceptional group tours and events across Russia, tailored to meet your needs. From corporate retreats and incentive trips to educational tours and special interest groups, we handle every detail with precision. Our dedicated team ensures seamless planning, including transportation, accommodations, and curated itineraries that highlight Russia’s cultural and historical treasures. We also offer bespoke event management services, whether for conferences, team-building activities, or private celebrations. With local expertise and a commitment to excellence, we provide memorable experiences for groups of all sizes. Trust ROTW Travel to deliver flawless group journeys and events. Create lasting memories with us in Russia!",
+            "paraheading":"GROUP & EVENTS"
+        },
+        "service4":{
+            "text":"Siberia, a vast and wild region of Russia, is renowned for its stunning natural landscapes, including endless forests, towering mountains, and the crystal-clear Lake Baikal, the world’s deepest freshwater lake. It offers a unique blend of adventure and tranquility, with opportunities for trekking, wildlife exploration, and unforgettable journeys on the Trans-Siberian Railway. Siberia’s vibrant cities, like Novosibirsk and Irkutsk, showcase a rich cultural heritage amidst modern development. Whether exploring in summer or experiencing its magical snow-covered winters, Siberia promises a truly unforgettable adventure.",
+            "paraheading":"AHLAN SERVICE"
+        },
+        "service5":{
+            "text":"Vladivostok, Russia's vibrant Pacific port city, is a captivating blend of stunning coastal beauty and rich cultural heritage. Known for its dramatic hills, picturesque harbors, and iconic Golden Bridge, it offers breathtaking views and a dynamic urban vibe. As the terminus of the legendary Trans-Siberian Railway, Vladivostok connects travelers to the heart of Russia and beyond. With its bustling markets, historic sites, and lively seafood cuisine, this city is a gateway to unforgettable adventures in the Russian Far East.",
+            "paraheading":"HALA SERVICE"
+        },
+        "service6":{
+            "text":"Kaliningrad, a unique Russian exclave nestled between Poland and Lithuania on the Baltic Sea, boasts a fascinating mix of history and culture. Once part of Prussia, it retains a blend of German and Russian influences, evident in its medieval forts, Gothic cathedrals, and amber museums. The city is famed for the Kaliningrad Cathedral and the nearby Curonian Spit, a UNESCO World Heritage Site known for its stunning dunes. With its rich heritage and coastal charm, Kaliningrad offers visitors a distinctive and memorable travel experience.",
+            "paraheading":"AL MAJLIS"
+        },
+        "service7":{
+            "text":"ROTW Travel offers reliable and comfortable airport transfer services to make your journey in Russia stress-free. Our professional drivers ensure punctual pick-ups and drop-offs, whether you’re arriving or departing. With a fleet of well-maintained vehicles, we accommodate solo travelers, families, and large groups with ease. Our services include personalized meet-and-greet assistance, ensuring a warm welcome upon arrival. We monitor flight schedules to adjust for any delays, providing a seamless travel experience. Enjoy a smooth and hassle-free ride to your destination, with safety and comfort as our top priorities. Start or end your trip with confidence using ROTW’s trusted airport transfer services.",
+            "paraheading":"AIRPORT TRANSFER"
+        },
+        "service8":{
+            "text":"ROTW Travel provides comprehensive visa assistance services to ensure a hassle-free application process for your journey to Russia. Our experienced team guides you through every step, from completing forms to compiling necessary documents. We offer clear instructions and support to help you meet all visa requirements with ease. Whether it’s a tourist, business, or group visa, we handle the complexities so you can focus on planning your trip. With our local expertise, we ensure timely processing and minimize delays. Trust ROTW Travel to simplify your visa application, making your travel experience smooth and stress-free. Let us handle the paperwork while you prepare for an unforgettable Russian adventure!",
+            "paraheading":"VISA ASSISTANT"
+        },
+        "service9":{
+            "text":"ROTW Travel offers professional Meet & Assist services to ensure a seamless and welcoming experience at Russian airports. Our team is there to greet you upon arrival, assist with immigration procedures, and guide you through baggage claim. Whether you’re traveling solo or in a group, we provide personalized support to make the process smooth and hassle-free. For departures, we help with check-in, security procedures, and ensure a stress-free boarding experience. Our services are designed to save you time and provide peace of mind. With ROTW Travel’s Meet & Assist, enjoy a smooth transition from airport to destination. Let us take care of the details, so you can travel with ease.",
+            "paraheading":"MEET & ASSIST"
+        },
+        "service10":{
+            "text":"ROTW Travel extends its expertise beyond Russia with our exceptional outbound tour services, offering unforgettable journeys to destinations worldwide. Whether you’re seeking adventure, relaxation, or cultural exploration, we craft personalized itineraries tailored to your preferences. Our partnerships with trusted global operators ensure high-quality services and seamless travel experiences. From flights and accommodations to guided tours and local experiences, we handle every detail with precision. Perfect for solo travelers, families, and groups, our outbound tours combine convenience, comfort, and unforgettable memories. Explore the world with confidence and ease, backed by our reliable support. Trust ROTW Travel to turn your dream destinations into reality!",
+            "paraheading":"OUTBOUND TOUR"
+        },
+        "service11":{
+            "text":"ROTW Travel offers reliable car rental services to enhance your journey across Russia. Choose from a wide range of well-maintained vehicles, including sedans, SUVs, and luxury cars, to suit your travel needs. Whether for business trips, sightseeing, or group travel, we provide flexible rental options with or without a professional driver. Our car rental service ensures comfort, safety, and convenience, making it easy to explore Russia at your own pace. With transparent pricing and 24/7 support, you can count on us for a hassle-free experience. From airport pickups to long-distance drives, ROTW Travel has you covered. Enjoy the freedom of travel with our dependable car rental service!",
+            "paraheading":"CAR RENTAL SERVICE"
+        }
+    }
+}

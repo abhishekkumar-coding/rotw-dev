@@ -1,12 +1,15 @@
 import React from "react";
 import FullScreenBackground from "../components/FullScreenBackground";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const ContactUs: React.FC = () => {
-    const text = "Reach out to ROTW Travel to start planning your perfect Russian adventure! Our dedicated team is here to assist you with personalized itineraries, travel inquiries, and any support you need. Whether you’re looking for advice or ready to book, we’re just a call or message away. Let’s make your dream journey to Russia a reality!"
+    const t = useTranslations("contact")
     return (
         <div className="w-full">
-            <FullScreenBackground imgsrc="/contact/contactus.png" alt="contactus Img" h1="Contact us" text={text} />
+            <FullScreenBackground imgsrc="/contact/contactus.png" alt="contactus Img"
+                h1={t("heading")}
+                text={t("description")} />
 
             <div className="w-full md:max-w-6xl bg-[#292B5B12] mb-10 mx-auto flex flex-col-reverse items-center justify-center py-7 md:flex-row gap-6">
                 {/* Contact Details Section */}
@@ -22,7 +25,7 @@ const ContactUs: React.FC = () => {
                         />
                         <div className="text-start mt-4 md:space-y-3">
                             <p className="text-sm md:text-base font-semibold text-gray-700">
-                                For general inquiries, please email
+                            {t("emailPrompt")}
                             </p>
                             <p className="text-sm md:text-base text-[#FF0000]">inbound@rotwtravels.com</p>
                         </div>
@@ -39,7 +42,7 @@ const ContactUs: React.FC = () => {
                         />
                         <div className="text-start mt-4 md:space-y-3">
                             <p className="text-sm md:text-base font-semibold text-gray-700">
-                                You can call us every day
+                            {t("phonePrompt")}
                             </p>
                             <p className="text-sm md:text-base text-[#FF0000]">+7-9309454007</p>
                         </div>
@@ -52,19 +55,19 @@ const ContactUs: React.FC = () => {
                     action=""
                     className="relative md:bottom-28 flex flex-col space-y-3 w-[60%] md:w-[40%] bg-white p-2  shadow-lg"
                 >
-                    <h1 className="text-sm md:text-base tracking-widest">Request Assistance</h1>
+                    <h1 className="text-sm md:text-base tracking-widest">{t("requestAssistance")}</h1>
                     {/* Contact Person */}
                     <div className="flex flex-col">
                         <label
                             htmlFor="name"
                             className="text-sm md:text-base font-medium text-gray-700 mb-2"
                         >
-                            Contact Person <span className="text-[#FF0000]">*</span>
+                            {t("heading")} <span className="text-[#FF0000]">*</span>
                         </label>
                         <input
                             type="text"
                             id="name"
-                            placeholder="Name"
+                            placeholder={t("namePlaceholder")}
                             required
                             className="p-2 border-black border rounded-md text-sm"
                         />
@@ -76,12 +79,12 @@ const ContactUs: React.FC = () => {
                             htmlFor="email"
                             className="text-sm md:text-base font-medium text-gray-700 mb-2"
                         >
-                            Email<span className="text-[#FF0000]">*</span>
+                            {t("email")}<span className="text-[#FF0000]">*</span>
                         </label>
                         <input
                             type="email"
                             id="email"
-                            placeholder="Email"
+                            placeholder={t("emailplaceholder")}
                             required
                             className="p-2 border-black border rounded-md text-sm"
                         />
@@ -93,13 +96,13 @@ const ContactUs: React.FC = () => {
                             htmlFor="startDate"
                             className="text-sm md:text-base font-medium text-gray-700 mb-2"
                         >
-                            Start Date<span className="text-[#FF0000]">*</span>
+                            {t("startDate")}<span className="text-[#FF0000]">*</span>
                         </label>
                         <input
                             type="date"
                             id="startDate"
                             required
-                            className="p-2 border-black border rounded-md text-sm"
+                            className="p-2 border-black text-gray-700 border rounded-md text-sm"
                         />
                     </div>
 
@@ -109,12 +112,12 @@ const ContactUs: React.FC = () => {
                             htmlFor="specialRequest"
                             className="text-sm md:text-base font-medium text-gray-700 mb-2"
                         >
-                            Special Request<span className="text-[#FF0000]">*</span>
+                            {t("specialRequest")}<span className="text-[#FF0000]">*</span>
                         </label>
                         <textarea
                             id="specialRequest"
                             rows={4}
-                            placeholder="Your request here..."
+                            placeholder={t("request")}
                             className="p-2 border-black border rounded-md text-sm"
                         ></textarea>
                     </div>
@@ -127,9 +130,9 @@ const ContactUs: React.FC = () => {
 
                         {/* Text */}
                         <p className="text-sm md:text-base text-gray-700">
-                            By clicking <span className="font-semibold">SEND REQUEST</span>, I agree to the processing of personal data in accordance with the{" "}
+                            {t("byclick")} <span className="font-semibold">{t("sendRequest")}</span>, {t("iAgry")}
                             <span className="border-b border-[#FF0000] cursor-pointer hover:text-[#FF0000]">
-                                Privacy Policy
+                                {t("privacyPolicy")}
                             </span>.
                         </p>
                     </div>
@@ -138,7 +141,7 @@ const ContactUs: React.FC = () => {
                         type="submit"
                         className="text-black border border-black py-2 md:py-3 px-4 md:px-6 rounded-md transition-all duration-150 text-sm md:text-base font-medium hover:bg-blue-700 hover:text-white focus:bg-blue-700 focus:text-white focus:ring-2 focus:ring-blue-500 focus:outline-none"
                     >
-                        SUBMIT REQUEST
+                        {t("submitRequest")}
                     </button>
                 </form>
             </div>

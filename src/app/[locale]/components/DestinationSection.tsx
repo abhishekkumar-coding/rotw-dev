@@ -18,7 +18,7 @@ export const DestinationSection: React.FC<DestinationProps> = ({
 }) => {
     return (
         <div
-            className={clsx("w-full flex flex-col items-center justify-between max-w-6xl mx-auto md:px-20 pb-10", {
+            className={clsx("w-full flex flex-col items-center justify-between max-w-6xl mx-auto md:px-20 pb-10 md:py-10", {
                 "md:flex-row bg-[#F0F0F4]": index % 2 === 0, // Apply flex-row for even index
                 "md:flex-row-reverse bg-white": index % 2 !== 0, // Apply flex-row-reverse for odd index
             })}
