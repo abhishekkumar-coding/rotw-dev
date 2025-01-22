@@ -234,5 +234,50 @@
             "text":"ROTW Travel offers reliable car rental services to enhance your journey across Russia. Choose from a wide range of well-maintained vehicles, including sedans, SUVs, and luxury cars, to suit your travel needs. Whether for business trips, sightseeing, or group travel, we provide flexible rental options with or without a professional driver. Our car rental service ensures comfort, safety, and convenience, making it easy to explore Russia at your own pace. With transparent pricing and 24/7 support, you can count on us for a hassle-free experience. From airport pickups to long-distance drives, ROTW Travel has you covered. Enjoy the freedom of travel with our dependable car rental service!",
             "paraheading":"CAR RENTAL SERVICE"
         }
+    },
+    "footer":{
+        "destination":{
+            "heading":"Destinations",
+            "destination1":"Moscow",
+            "destination2":"Saint Petersburg",
+            "destination3":"Sochi",
+            "destination4":"Siberia",
+            "destination5":"Vladivostok",
+            "destination6":"Kaliningrad",
+            "destination7":"Kazan",
+            "destination8":"Golden Ring"
+        },
+        "service":{
+            "heading":"Services",
+            "service1":"Inbound Tour Operator",
+            "service2":"Airport Service",
+            "service3":"Group & Events",
+            "service4":"Ahlan Service",
+            "service5":"Hala Service",
+            "service6":"Airport Transfer",
+            "service7":"Visa Assistant",
+            "service8":"Meet & Assist",
+            "service9":"Outbound Tour",
+            "service10":"Car Rental Service"
+        },
+        "company":{
+            "heading":"Company",
+            "company1":"Gallery",
+            "company2":"About us",
+            "company3":"Contact us"
+        },
+        "legal":{
+            "heading":"Legal",
+            "legal1":"Privacy Policy",
+            "legal2":"Terms of Service",
+            "legal3":"Payment Terms"
+        },
+        "contactus":{
+            "heading":"Contact us",
+            "address":"House 32 Premises. 4/2,Kalanchevskaya St.,129090, Moscow, Russia"
+        },
+        "copyright":{
+            "text":"Copyright © 2024 ROTW. All Rights Reserved."
+        }
     }
 }
