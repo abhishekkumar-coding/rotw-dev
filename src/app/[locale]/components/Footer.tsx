@@ -7,8 +7,10 @@ import { FiLinkedin } from "react-icons/fi";
 import { CiPhone } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
 import { CiLocationOn } from "react-icons/ci";
+import { useTranslations } from "next-intl";
 
 const Footer: React.FC = () => {
+  const t=useTranslations("footer")
   return (
     <footer className="bg-[#292B5B] relative text-white text-center py-10 overflow-x-hidden">
       {/* bg image */}
@@ -73,18 +75,18 @@ const Footer: React.FC = () => {
             {/* Destinations */}
             <div className="lg:basis-[17%] md:basis-[20%] md:mb-10 lg:mb-0">
               <h3 className="md:font-extralight text-[#FF0000] font-semibold md:tracking-[0.12rem] mb-4 md:text-left text-center">
-                Destinations
+                {t("destination.heading")}
               </h3>
               <ul className="space-y-2 md:list-disc">
                 {[
-                  "Moscow",
-                  "Saint Petersburg",
-                  "Sochi",
-                  "Siberia",
-                  "Vladivostok",
-                  "Kaliningrad",
-                  "Kazan",
-                  "Golden Ring",
+                  t("destination.destination1"),
+                  t("destination.destination2"),
+                  t("destination.destination3"),
+                  t("destination.destination4"),
+                  t("destination.destination5"),
+                  t("destination.destination6"),
+                  t("destination.destination7"),
+                  t("destination.destination8"),
                 ].map((item) => (
                   <li
                     key={item}
@@ -104,20 +106,20 @@ const Footer: React.FC = () => {
             {/* Services */}
             <div className="lg:basis-[17%] md:basis-[30%] md:mb-10 lg:mb-0">
               <h3 className="md:font-extralight text-[#FF0000] font-semibold md:tracking-[0.12rem] mb-4 md:text-left text-center">
-                Services
+                {t("service.heading")}
               </h3>
               <ul className="space-y-2 md:list-disc">
                 {[
-                  "Inbound Tour Operator",
-                  "Airport Service",
-                  "Group & Events",
-                  "Ahlan Service",
-                  "Hala Service",
-                  "Airport Transfer",
-                  "Visa Assistant",
-                  "Meet & Assist",
-                  "Outbound Tour",
-                  "Car Rental Service",
+                  t("service.service1"),
+                  t("service.service2"),
+                  t("service.service3"),
+                  t("service.service4"),
+                  t("service.service5"),
+                  t("service.service6"),
+                  t("service.service7"),
+                  t("service.service8"),
+                  t("service.service9"),
+                  t("service.service10"),
                 ].map((item) => (
                   <li
                     key={item}
@@ -137,10 +139,10 @@ const Footer: React.FC = () => {
             {/* Company */}
             <div className="lg:basis-[17%] md:basis-[30%]">
               <h3 className="md:font-extralight text-[#FF0000] font-semibold md:tracking-[0.12rem] mb-4 md:text-left text-center">
-                Company
+                {t("company.heading")}
               </h3>
               <ul className="space-y-2 md:list-disc">
-                {["Gallery", "About us", "Contact us"].map((item) => (
+                {[t("company.company1"),t("comapny.company2"),t("company.company3")].map((item) => (
                   <li
                     key={item}
                     className="md:ml-[0.8rem] md:text-left text-center text-sm"
@@ -159,10 +161,10 @@ const Footer: React.FC = () => {
             {/* Legal */}
             <div className="lg:basis-[17%] md:basis-[30%]">
               <h3 className="md:font-extralight text-[#FF0000] font-semibold md:tracking-[0.12rem] mb-4 md:text-left text-center">
-                Legal
+                {t("legal.heading")}
               </h3>
               <ul className="space-y-2 md:list-disc">
-                {["Privacy Policy", "Terms of Service", "Payment Terms"].map(
+                {[t("legal.legal1"),t("legal.legal2"),t("legal.legal3")].map(
                   (item) => (
                     <li
                       key={item}
@@ -182,7 +184,7 @@ const Footer: React.FC = () => {
             {/* Contact us */}
             <div className="lg:basis-[17%] md:basis-[30%]">
               <h3 className="md:font-extralight text-[#FF0000] font-semibold md:tracking-[0.12rem]  mb-4 md:text-left text-center">
-                Contact us
+                {t("contactus.heading")}
               </h3>
               <div className="flex flex-col md:items-start items-center gap-2">
                 <div className="flex gap-2 items-center">
@@ -195,7 +197,7 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="flex gap-2 justify-center md:justify-start">
                   <CiLocationOn className="mt-1"/>
-                  <p className="md:text-left md:max-w-[80%] text-center">House 32 Premises. 4/2,Kalanchevskaya St.,129090, Moscow, Russia</p>
+                  <p className="md:text-left md:max-w-[80%] text-center">{t("contactus.address")}</p>
                 </div>
                 <div className="w-full h-[1px] bg-white mt-14 mb-5 md:hidden block"/>
               </div>
@@ -222,7 +224,7 @@ const Footer: React.FC = () => {
         {/* Bottom Section */}
         <div className="mt-10 md:w-[31%] w-full mx-auto text-sm text-gray-400">
           <div className="w-full mx-auto h-[0.05rem] md:block hidden bg-white rounded-md" />
-          <p className="my-1">Copyright © 2024 ROTW. All Rights Reserved.</p>
+          <p className="my-1">{t("copyright.text")}</p>
           <div className="w-full mx-auto h-[0.05rem] bg-white rounded-md md:block hidden" />
         </div>
       </div>

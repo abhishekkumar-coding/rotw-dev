@@ -16,7 +16,7 @@ export const ImageWithText:React.FC<{blueheading?:string; redheading?:string; pa
                     <h1 className="text-[#292B5B] font-[700] md:text-2xl text-xl underline decoration-[#ff0000] underline-offset-4">
                         {paraheading}
                     </h1>
-                    <p className="text-[#545454] font-[400] tracking-widest mt-16">
+                    <p className="text-[#545454] font-[400] tracking-widest mt-10">
                         {text}
                     </p>
                 </div>
