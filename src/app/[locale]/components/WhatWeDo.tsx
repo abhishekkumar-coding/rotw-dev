@@ -28,7 +28,7 @@ const WhatWeDo: React.FC = () => {
 
         {/* Grid */}
         <div className="flex justify-center">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+          <div className="flex flex-wrap items-center justify-evenly gap-8">
             {items.map((item, index) => (
               <div
                 key={index}
@@ -43,7 +43,7 @@ const WhatWeDo: React.FC = () => {
                     className="rounded-md"
                   />
                 </div>
-                <p className="text-lg text-gray-800 font-medium">{item.title}</p>
+                <p className="text-base w-52 text-gray-800 font-medium">{item.title}</p>
               </div>
             ))}
           </div>

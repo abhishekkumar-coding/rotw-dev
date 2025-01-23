@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
               </Link>
 
               {/* Dropdown */}
-              <div className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-lg p-4 border mt-2 w-96 text-sm">
+              <div className="absolute z-50 left-0 hidden group-hover:block bg-white shadow-lg rounded-lg p-4 border mt-2 w-96 text-sm">
                 <ul className="grid grid-cols-3 gap-4">
                   {[
                     t("destiniDropdown.beach"),
@@ -99,7 +99,7 @@ const Navbar: React.FC = () => {
               <Link href={`/${pathname.split("/")[1]}/services`} className="text-[#292B5B] text-[20px] font-[500] hover:text-[#FF0000]  transform hover:scale-110 transition-all duration-300 ease-in-out">
                 {t("services")}
               </Link>
-              <div className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-lg p-4 border mt-2 w-72 text-sm">
+              <div className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-lg p-4 border mt-2 w-96 text-sm">
                 <ul className="grid grid-cols-2 gap-4">
                   {[
                     t("servicesDropdown.hotel"),

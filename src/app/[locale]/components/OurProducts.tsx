@@ -9,7 +9,7 @@ import { useTranslations } from "next-intl";
 
 const TravelTips: React.FC = () => {
 
-  const t =useTranslations("cards")
+  const t = useTranslations("cards")
 
   const settings = {
     dots: true,
@@ -28,6 +28,10 @@ const TravelTips: React.FC = () => {
       {
         breakpoint: 768,
         settings: { slidesToShow: 2 },
+      },
+      {
+        breakpoint: 640,
+        settings: { slidesToShow: 1 },
       },
       {
         breakpoint: 480,
@@ -98,7 +102,7 @@ const TravelTips: React.FC = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className={`p-3 ${card.bgColor} h-96 border border-gray-300  rounded-md flex-shrink-0 w-[150px]`}
+              className={`p-3 ${card.bgColor} h-96 border border-gray-300 rounded-md flex-shrink-0 w-[150px]`}
             >
               <div className="w-20 h-20 mx-auto">
                 <Image

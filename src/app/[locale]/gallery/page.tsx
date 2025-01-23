@@ -15,13 +15,13 @@ const Gallery: React.FC = () => {
                 h1={t("heading")}
                 text={t("description")} />
 
-            <div className="w-full graybg mb-10 max-w-6xl mx-auto mt-20 md:mt-0">
+            <div className="w-full graybg md:mb-10 mb-20 max-w-6xl mx-auto mt-20 md:mt-0">
 
                 {/* Content Section */}
                 <div className="flex  flex-col md:flex-row items-center md:items-center justify-center gap-6 w-full py-0">
-                    <div className="w-full flex flex-row md:flex-col items-center justify-center md:w-1/2">
+                    <div className="flex flex-row md:flex-col items-center justify-center w-4/5 md:w-1/2">
 
-                        <div className="relative">
+                        <div className="relative md:mb-0 mb-20">
                             <Image
                                 src="/gallery/img1.png"
                                 alt="Customer Story"
@@ -31,9 +31,10 @@ const Gallery: React.FC = () => {
                                 priority
                                 className="rounded-md"
                             />
-                        </div></div>
+                        </div>
+                    </div>
                     {/* Text Section */}
-                    <div className="w-full md:my-0 my-[400px] px-14 md:px-0 sm:w-2/3 md:w-2/5 flex flex-col justify-center h-screen text-center">
+                    <div className="w-full md:my-0 md:mb-0 my-[400px] px-14 md:px-0 sm:w-2/3 md:w-2/5 flex flex-col justify-center h-screen text-center">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-0 w-full">
                             <div className="relative">
                                 <Image

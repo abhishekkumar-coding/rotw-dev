@@ -40,11 +40,15 @@ body {
 }
 
 .slick-slide > div {
+  overflow-y: scroll;
   margin: 0 10px;
-  height: 100%;
+  height:fit-content;
   z-index: 10;
   overflow-y: auto;
   transition: transform 0.3s ease; /* Smooth transition for scaling effect */
+}
+.slick-slide > div::-webkit-scrollbar {
+  display: none;
 }
 
 .slick-slide > div:hover {

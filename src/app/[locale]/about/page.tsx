@@ -12,7 +12,7 @@ const AboutPage: React.FC = () => {
         id: 1,
         heading1: t("heading1"),
         para: t("sectionPara"),
-        images: [
+         images: [
             { id: 1, src: "/about/img1.png" },
             { id: 2, src: "/about/img5.png" },
             { id: 3, src: "/about/img3.png" },
