@@ -42,7 +42,7 @@ const MobLanguageDropdown: React.FC = () => {
     const selectedLang = languages.find((lang) => lang.code === currentLocale) || languages[0];
 
     return (
-        <div className="absolute md:hidden right-0 ml-7 inline-block text-left z-50">
+        <div className="absolute md:hidden right-0 ml-7 inline-block text-left z-40">
             <div
                 className={`flex items-center ${langTab ? "translate-x-24" : "translate-x-0"
                     } gap-3 bg-white p-2 rounded transition-transform duration-300`}

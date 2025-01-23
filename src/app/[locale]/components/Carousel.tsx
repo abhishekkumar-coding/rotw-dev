@@ -7,15 +7,16 @@ const Carousel: React.FC = () => {
    const t = useTranslations("carousel")
   const [activeIndex, setActiveIndex] = useState(0);
   const slides = [
-    "/carousel-1.png",
-    "/carousel-2.png",
-    "/carousel-3.png",
-    "/carousel-4.png",
-    "/carousel-6.png",
-    "/carousel-7.png",
-    "/carousel-8.png",
-    "/carousel-9.png",
-    "/carousel-10.png",
+    t("images.image1"),
+    t("images.image2"),
+    t("images.image3"),
+    t("images.image4"),
+    t("images.image5"),
+    t("images.image6"),
+    t("images.image7"),
+    t("images.image8"),
+    t("images.image9"),
+    t("images.image10"),
   ];
 
   const handleNext = () => {
@@ -70,10 +71,10 @@ const Carousel: React.FC = () => {
       {/* Slider Controls */}
       <button
         type="button"
-        className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        className="absolute max-sm:top-9 sm:top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         onClick={handlePrev}
       >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 focus:ring-4 focus:ring-white">
+        <span className="inline-flex items-center bg-[#FF0000] justify-center w-10 h-10 rounded-full group-hover:bg-[#FF0000] focus:ring-4 focus:ring-white">
           <svg
             className="w-4 h-4 text-white"
             aria-hidden="true"
@@ -94,10 +95,10 @@ const Carousel: React.FC = () => {
       </button>
       <button
         type="button"
-        className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        className="absolute max-sm:top-9 sm:top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         onClick={handleNext}
       >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 focus:ring-4 focus:ring-white">
+        <span className="inline-flex items-center bg-[#FF0000] justify-center w-10 h-10 rounded-full group-hover:bg-[#FF0000] focus:ring-4 focus:ring-white">
           <svg
             className="w-4 h-4 text-white"
             aria-hidden="true"

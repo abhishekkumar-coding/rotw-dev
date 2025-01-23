@@ -238,7 +238,7 @@ const Destinations: React.FC = () => {
                 h1={t("heading")}
                 text={t("text")}
             />
-            <div className="w-full max-w-6xl mx-auto mt-16 md:mt-0  flex flex-col items-center bg-[#F0F0F4]">
+            <div className="w-full max-w-6xl mx-auto mt-16 md:mt-0 pt-5 flex flex-col items-center bg-[#F0F0F4]">
                 <h1 className="text-[#292B5B] font-extrabold text-xl md:text-3xl">
                     {t("top")} <span className="text-[#FF0000]">{t("destination")}</span> {t("toVisit")}
                 </h1>
