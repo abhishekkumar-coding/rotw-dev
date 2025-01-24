@@ -15,7 +15,7 @@ const Destinations: React.FC = () => {
     const destinationsData = [
 
         {
-            id: 1,
+            id: "Moscow",
             heading1: t("destination1.heading1"),
             para: t("destination1.para"),
             "images": [
@@ -42,7 +42,7 @@ const Destinations: React.FC = () => {
             ]
         },
         {
-            id: 2,
+            id: "Saint Petersburg",
             heading1: t("destination2.heading1"),
             para: t("destination2.para"),
             "images": [
@@ -69,7 +69,7 @@ const Destinations: React.FC = () => {
             ]
         },
         {
-            id: 3,
+            id: "Sochi",
             heading1: t("destination3.heading1"),
             para: t("destination3.para"),
             "images": [
@@ -96,7 +96,7 @@ const Destinations: React.FC = () => {
             ]
         },
         {
-            id: 4,
+            id: "Siberia",
             heading1: t("destination4.heading1"),
             para: t("destination4.para"),
             "images": [
@@ -123,7 +123,7 @@ const Destinations: React.FC = () => {
             ]
         },
         {
-            id: 5,
+            id: "Vladivostok",
             heading1: t("destination5.heading1"),
             para: t("destination5.para"),
             "images": [
@@ -150,7 +150,7 @@ const Destinations: React.FC = () => {
             ]
         },
         {
-            id: 6,
+            id: "Kaliningrad",
             heading1: t("destination6.heading1"),
             para: t("destination6.para"),
             "images": [
@@ -177,7 +177,7 @@ const Destinations: React.FC = () => {
             ]
         },
         {
-            id: 7,
+            id: "Kazan",
             heading1: t("destination7.heading1"),
             para: t("destination7.para"),
             "images": [
@@ -204,7 +204,7 @@ const Destinations: React.FC = () => {
             ]
         },
         {
-            id: 8,
+            id: "Golden Ring",
             heading1: t("destination8.heading1"),
             para: t("destination8.para"),
             "images": [
@@ -247,14 +247,15 @@ const Destinations: React.FC = () => {
             </div>
             <div className="w-full max-w-6xl mx-auto py-8 md:space-y-12">
                 {destinationsData.map((destination, index) => (
-                    <DestinationSection
-                        key={destination.id}
-                        index={index}
-                        id={destination.id}
-                        heading1={destination.heading1}
-                        para={destination.para}
-                        images={destination.images}
-                    />
+                    <div key={destination.id} id={destination.id}>
+                        <DestinationSection
+                            index={index}
+                            id={destination.id}
+                            heading1={destination.heading1}
+                            para={destination.para}
+                            images={destination.images}
+                        />
+                    </div>
                 ))}
             </div>
         </div>

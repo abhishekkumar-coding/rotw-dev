@@ -35,9 +35,10 @@ const Navbar: React.FC = () => {
         </div>
 
         <button
-          onClick={() => {setIsOpen(!isOpen)
+          onClick={() => {
+            setIsOpen(!isOpen)
             console.log("open");
-            
+
           }}
           className="text-gray-700 md:hidden"
         >
@@ -52,7 +53,7 @@ const Navbar: React.FC = () => {
         </button>
         <div className="md:flex justify-between items-center">
           <ul
-            className={clsx("md:flex md:items-center md:static md:w-auto md:space-y-0 md:h-auto md:space-x-4 lg:space-x-6 space-y-4 text-gray-700 text-lg",isOpen
+            className={clsx("md:flex md:items-center md:static md:w-auto md:space-y-0 md:h-auto md:space-x-4 lg:space-x-6 space-y-4 text-gray-700 text-lg", isOpen
               ? "absolute w-full left-0 top-20 bg-white z-10 block"
               : "absolute w-full left-0 top-20 bg-white z-10 hidden")}
           >
@@ -70,25 +71,24 @@ const Navbar: React.FC = () => {
               </Link>
 
               {/* Dropdown */}
-              <div className="absolute z-50 left-0 hidden group-hover:block bg-white shadow-lg rounded-lg p-4 border mt-2 w-96 text-sm">
+              <div className="absolute z-50 left-0 hidden group-hover:block bg-white shadow-lg rounded-lg p-4 border mt-2 w-[450px] text-sm">
                 <ul className="grid grid-cols-3 gap-4">
                   {[
-                    t("destiniDropdown.beach"),
-                    t("destiniDropdown.mountain"),
-                    t("destiniDropdown.city"),
-                    t("destiniDropdown.cruise"),
-                    t("destiniDropdown.desert"),
-                    t("destiniDropdown.historical"),
-                    t("destiniDropdown.jungle"),
-                    t("destiniDropdown.island"),
-                    t("destiniDropdown.safari")
+                    { key: "Moscow", label: t("destiniDropdown.Moscow") },
+                    { key: "Saint Petersburg", label: t("destiniDropdown.Saint Petersburg") },
+                    { key: "Sochi", label: t("destiniDropdown.Sochi") },
+                    { key: "Siberia", label: t("destiniDropdown.Siberia") },
+                    { key: "Vladivostok", label: t("destiniDropdown.Vladivostok") },
+                    { key: "Kaliningrad", label: t("destiniDropdown.Kaliningrad") },
+                    { key: "Kazan", label: t("destiniDropdown.Kazan") },
+                    { key: "Golden Ring", label: t("destiniDropdown.Golden Ring") }
                   ].map((item) => (
-                    <li key={item}>
+                    <li key={item.key}>
                       <Link
-                        href={`#${item.toLowerCase()}`}
+                        href={`#${item.key}`}
                         className="block text-center text-wrap text-gray-700 text-[18px] font-medium hover:text-[#FF0000]  transition duration-300 ease-in-out"
                       >
-                        {item}
+                        {item.label}
                       </Link>
                     </li>
                   ))}

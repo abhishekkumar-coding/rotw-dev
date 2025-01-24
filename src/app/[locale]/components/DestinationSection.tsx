@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 
 interface DestinationProps {
-    id: number;
+    id: string;
     heading1: string;
     para: string;
     images: { id: number; src: string }[];

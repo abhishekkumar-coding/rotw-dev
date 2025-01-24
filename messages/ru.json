@@ -6,15 +6,14 @@
         "gallery": "Галерея",
         "contact": "Контакты",
         "destiniDropdown": {
-            "beach": "Пляж",
-            "mountain": "Гора",
-            "city": "Город",
-            "cruise": "Круиз",
-            "desert": "Пустыня",
-            "historical": "Исторический",
-            "jungle": "Джунгли",
-            "island": "Остров",
-            "safari": "Сафари"
+            "Moscow": "Москва",
+            "Saint Petersburg": "Санкт-Петербург",
+            "Sochi": "Сочи",
+            "Siberia": "Сибирь",
+            "Vladivostok": "Владивосток",
+            "Kaliningrad": "Калининград",
+            "Kazan": "Казань",
+            "Golden Ring": "Золотое Кольцо"
         },
         "servicesDropdown": {
             "hotel": "Бронирование отелей",
@@ -37,7 +36,7 @@
         "diversity": "разнообразием, богатой историей и научными",
         "achievements": "достижениями",
         "heritageSites": "Культурные и археологические памятники для туризма",
-        "siteCount": "155,5 тысяч"
+        "siteCount": "156 тысяч"
     },
     "carousel": {
         "heading": "«10 уникальных впечатлений, которые привлекут вас в Россию»",
