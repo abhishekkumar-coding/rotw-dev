@@ -10,7 +10,7 @@ const FullScreenBackground: React.FC<{
   return (
     <section className="relative bg-white h-screen w-full py-6">
       {/* Background Image */}
-      <BackgroundImage src="/about/aboutbg.png" alt="About Background" />
+      <BackgroundImage src="/Bg.png" alt="About Background" />
 
       {/* Main Content */}
       <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full sm:space-y-20 md:space-y-0 mt-10 max-w-6xl mx-auto">
