@@ -10,6 +10,8 @@ import { DestinationSection } from "../components/DestinationSection";
 const Destinations: React.FC = () => {
     const t = useTranslations("destinationsData")
 
+    //images data
+
     const destinationsData = [
 
         {
