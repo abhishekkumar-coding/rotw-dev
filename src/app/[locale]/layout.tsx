@@ -41,7 +41,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} scroll-smooth antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           <main>{children}</main>
