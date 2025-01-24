@@ -1,8 +1,8 @@
 "use client"
 import React from "react";
 import FullScreenBackground from "../components/FullScreenBackground";// Import destinationsData from its defined file
-import { DestinationSection } from "../components/DestinationSection";
 import { useTranslations } from "next-intl";
+import { DestinationSection } from "../components/DestinationSection";
 
 
 
@@ -40,7 +40,7 @@ const Destinations: React.FC = () => {
             ]
         },
         {
-            id: 1,
+            id: 2,
             heading1: t("destination2.heading1"),
             para: t("destination2.para"),
             "images": [
@@ -67,7 +67,7 @@ const Destinations: React.FC = () => {
             ]
         },
         {
-            id: 1,
+            id: 3,
             heading1: t("destination3.heading1"),
             para: t("destination3.para"),
             "images": [
@@ -94,7 +94,7 @@ const Destinations: React.FC = () => {
             ]
         },
         {
-            id: 1,
+            id: 4,
             heading1: t("destination4.heading1"),
             para: t("destination4.para"),
             "images": [
@@ -121,7 +121,7 @@ const Destinations: React.FC = () => {
             ]
         },
         {
-            id: 1,
+            id: 5,
             heading1: t("destination5.heading1"),
             para: t("destination5.para"),
             "images": [
@@ -148,7 +148,7 @@ const Destinations: React.FC = () => {
             ]
         },
         {
-            id: 1,
+            id: 6,
             heading1: t("destination6.heading1"),
             para: t("destination6.para"),
             "images": [
@@ -175,7 +175,7 @@ const Destinations: React.FC = () => {
             ]
         },
         {
-            id: 1,
+            id: 7,
             heading1: t("destination7.heading1"),
             para: t("destination7.para"),
             "images": [
@@ -202,7 +202,7 @@ const Destinations: React.FC = () => {
             ]
         },
         {
-            id: 1,
+            id: 8,
             heading1: t("destination8.heading1"),
             para: t("destination8.para"),
             "images": [
@@ -248,6 +248,7 @@ const Destinations: React.FC = () => {
                     <DestinationSection
                         key={destination.id}
                         index={index}
+                        id={destination.id}
                         heading1={destination.heading1}
                         para={destination.para}
                         images={destination.images}
