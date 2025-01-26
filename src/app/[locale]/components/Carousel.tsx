@@ -71,7 +71,7 @@ const Carousel: React.FC = () => {
       {/* Slider Controls */}
       <button
         type="button"
-        className="absolute max-sm:top-9 sm:top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        className="absolute max-sm:top-9 sm:top-0 left-0  z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         onClick={handlePrev}
       >
         <span className="inline-flex items-center bg-[#FF0000] justify-center w-10 h-10 rounded-full group-hover:bg-[#FF0000] focus:ring-4 focus:ring-white">

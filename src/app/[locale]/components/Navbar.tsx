@@ -85,7 +85,7 @@ const Navbar: React.FC = () => {
                   ].map((item) => (
                     <li key={item.key}>
                       <Link
-                        href={`#${item.key}`}
+                        href={`destinations#${item.key}`}
                         className="block text-center text-wrap text-gray-700 text-[18px] font-medium hover:text-[#FF0000]  transition duration-300 ease-in-out"
                       >
                         {item.label}

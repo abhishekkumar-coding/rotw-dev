@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import "../globals.css"
 import MobLanguageDropdown from "./MobLanguageDropdown";
 import { useTranslations } from "next-intl";
 
@@ -36,7 +37,7 @@ const BackgroundImage: React.FC<{ src: string; alt: string }> = ({
 
 const HeroHeading: React.FC<{ t: any }> = ({ t }) => (
   <div className="flex flex-col items-center md:items-start mb-16">
-    <h1 className="text-5xl md:text-7xl font-extrabold text-[#FF0000] uppercase leading-tight tracking-wider text-center md:text-left">
+    <h1 className="HeroHeading text-5xl md:text-7xl font-extrabold text-[#FF0000] uppercase leading-tight tracking-wider text-center md:text-left">
     {t("endless")} <br />
     {t("discovery")} <br /> {t("of")}
     </h1>

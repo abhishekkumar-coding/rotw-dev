@@ -28,11 +28,11 @@ const WhatWeDo: React.FC = () => {
 
         {/* Grid */}
         <div className="flex justify-center">
-          <div className="flex flex-wrap items-center justify-evenly gap-8">
+          <div className="flex flex-wrap items-center justify-center gap-8">
             {items.map((item, index) => (
               <div
                 key={index}
-                className={`flex flex-col items-center justify-center text-center`}
+                className={`flex flex-col items-center justify-center text-center transition-all hover:scale-110 duration-200`}
               >
                 <div className="relative w-20 h-20 mb-4">
                   <Image
