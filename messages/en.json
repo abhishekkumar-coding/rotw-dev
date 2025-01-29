@@ -13,7 +13,9 @@
             "Vladivostok": "Vladivostok",
             "Kaliningrad": "Kaliningrad",
             "Kazan": "Kazan",
-            "Golden Ring": "Golden Ring"
+            "Golden Ring": "Golden Ring",
+            "inbound": "inbound",
+            "outbound": "outbound"
         },
         "servicesDropdown": {
             "hotel": "Hotel Booking",
@@ -156,7 +158,7 @@
         "heading1": "The perfect vacation come true with our Travel Agency",
         "sectionPara": "We are a team of experienced travel experts who specialize in planning and organizing unforgettable travel experiences for our clients with a wide range of travel services, including flight bookings, hotel reservations and more"
     },
-    "destinationsData": {
+    "destinationsInbound": {
         "text": "Discover the magic of Russia with ROTW Travel's curated destinations. From the iconic cities of Moscow and St. Petersburg to the serene landscapes of the Golden Ring and beyond, we offer journeys to suit every traveler. Explore the history, culture, and natural beauty of this vast country. Let us guide you to unforgettable experiences in Russia's most remarkable locations!",
         "heading": "Destinations",
         "top": "Top",
@@ -193,6 +195,33 @@
         "destination8": {
             "heading1": "GOLDEN RING",
             "para": "The Golden Ring of Russia is a picturesque collection of ancient towns that showcase the country’s rich history, architecture, and culture. Located northeast of Moscow, this route features stunning onion-domed churches, historic monasteries, and charming wooden houses."
+        }
+    },
+    "destinationsOutbound": {
+        "text": "Discover the magic of Russia with ROTW Travel's curated destinations. From the iconic cities of Moscow and St. Petersburg to the serene landscapes of the Golden Ring and beyond, we offer journeys to suit every traveler. Explore the history, culture, and natural beauty of this vast country. Let us guide you to unforgettable experiences in Russia's most remarkable locations!",
+        "heading": "Destinations",
+        "top": "Top",
+        "destination": "Destinations",
+        "toVisit": "to Visit across the world",
+        "destination1": {
+            "heading1": "DUBAI",
+            "para": "Dubai, a city of modern marvels and timeless traditions, is known for its iconic skyline, luxurious shopping malls, and world-class attractions. Experience the thrill of desert safaris, admire the architectural wonder of the Burj Khalifa, and indulge in its vibrant nightlife."
+        },
+        "destination2": {
+            "heading1": "INDIA",
+            "para": "India, a land of diverse cultures and rich history, offers breathtaking landscapes and iconic landmarks like the Taj Mahal. From the bustling streets of Delhi to the serene backwaters of Kerala, every corner of India tells a unique story."
+        },
+        "destination3": {
+            "heading1": "HONG KONG",
+            "para": "Hong Kong, a vibrant city known for its stunning harbor views and bustling markets, blends modern skyscrapers with traditional temples. Its unique mix of Eastern and Western influences creates an unforgettable experience."
+        },
+        "destination4": {
+            "heading1": "UNITED KINGDOM",
+            "para": "The UK, a land of history and charm, is home to iconic landmarks like Big Ben, Buckingham Palace, and Stonehenge. Explore the vibrant culture of London, the scenic beauty of the countryside, and the historic charm of its castles and cathedrals."
+        },
+        "destination5": {
+            "heading1": "OMAN",
+            "para": "Oman, a hidden gem in the Middle East, boasts stunning desert landscapes, pristine beaches, and rich cultural heritage. Explore ancient forts, bustling souks, and breathtaking mountain ranges."
         }
     },
     "services": {

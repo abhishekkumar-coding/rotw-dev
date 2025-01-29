@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import LanguageDropdown from "./LanguageDropdown";
@@ -10,14 +10,42 @@ import { usePathname, useRouter } from "next/navigation";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [servDrop, setServDrop] = useState(false)
+  const [destDrop, setDestDrop] = useState(false)
   const t = useTranslations("navbar");
   const router = useRouter();
   const pathname = usePathname();
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+  
+      // Close all dropdowns if click is outside all of them
+      if (
+        !target.closest(".dest") && // Check for Destinations dropdown
+        !target.closest(".serv") && // Check for Services dropdown
+        !target.closest(".hamburger") // Check for Hamburger dropdown
+      ) {
+        setDestDrop(false); // Close Destinations dropdown
+        setServDrop(false); // Close Services dropdown
+        setIsOpen(false); // Close Hamburger dropdown
+      }
+    };
+  
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+  
+
+
+
   const switchLocale = (locale: string) => {
     router.push(`/${locale}${pathname}`);
   };
-
+  const toggleDrop1 = ()=>setServDrop((prev) =>!prev)
+  const toggleDrop = () => setDestDrop((prev) => !prev);
   return (
     <nav className="bg-white shadow-md sticky top-0 py-1 z-50">
       <div className="container mx-auto max-w-6xl  py-3 flex justify-between items-center">
@@ -40,7 +68,7 @@ const Navbar: React.FC = () => {
             console.log("open");
 
           }}
-          className="text-gray-700 md:hidden"
+          className="hamburger text-gray-700 md:hidden"
         >
           <div className="absolute right-0 bottom-5 w-10 h-10">
             <Image
@@ -62,30 +90,34 @@ const Navbar: React.FC = () => {
                 {t("about")}
               </Link>
             </li>
-            <li className="relative group text-center border-b md:border-none border-gray-300 pb-2">
+            <li  onMouseEnter={() => setDestDrop(true)} className="relative group text-center border-b md:border-none border-gray-300 pb-2">
               <Link
                 href={`/${pathname.split("/")[1]}/destinations`}
+                onClick={(event) => event.preventDefault()} // Prevent navigation
                 className="text-[#292B5B] text-[20px] font-[500] hover:text-[#FF0000] transform hover:scale-110 transition-all duration-300 ease-in-out"
               >
                 {t("destinations")}
               </Link>
 
               {/* Dropdown */}
-              <div className="absolute z-50 left-0 hidden group-hover:block bg-white shadow-lg rounded-lg p-4 border mt-2 w-[450px] text-sm">
-                <ul className="grid grid-cols-3 gap-4">
+              <div className={`absolute z-50 top-14 left-0 bg-white shadow-lg rounded-lg p-4 border mt-2 w-64 text-sm ${destDrop ? "block" : "hidden"}`}
+                onMouseLeave={() => setDestDrop(false)}>
+                <ul className="grid grid-cols-2 gap-4">
                   {[
-                    { key: "Moscow", label: t("destiniDropdown.Moscow") },
-                    { key: "Saint Petersburg", label: t("destiniDropdown.Saint Petersburg") },
-                    { key: "Sochi", label: t("destiniDropdown.Sochi") },
-                    { key: "Siberia", label: t("destiniDropdown.Siberia") },
-                    { key: "Vladivostok", label: t("destiniDropdown.Vladivostok") },
-                    { key: "Kaliningrad", label: t("destiniDropdown.Kaliningrad") },
-                    { key: "Kazan", label: t("destiniDropdown.Kazan") },
-                    { key: "Golden Ring", label: t("destiniDropdown.Golden Ring") }
+                    // { key: "Moscow", label: t("destiniDropdown.Moscow") },
+                    // { key: "Saint Petersburg", label: t("destiniDropdown.Saint Petersburg") },
+                    // { key: "Sochi", label: t("destiniDropdown.Sochi") },
+                    // { key: "Siberia", label: t("destiniDropdown.Siberia") },
+                    // { key: "Vladivostok", label: t("destiniDropdown.Vladivostok") },
+                    // { key: "Kaliningrad", label: t("destiniDropdown.Kaliningrad") },
+                    // { key: "Kazan", label: t("destiniDropdown.Kazan") },
+                    // { key: "Golden Ring", label: t("destiniDropdown.Golden Ring") }
+                    { key: "inbound", label: t("destiniDropdown.inbound") },
+                    { key: "outbound", label: t("destiniDropdown.outbound") }
                   ].map((item) => (
                     <li key={item.key}>
                       <Link
-                        href={`destinations#${item.key}`}
+                        href={`/${pathname.split("/")[1]}/destinations/${item.key}`}
                         className="block text-center text-wrap text-gray-700 text-[18px] font-medium hover:text-[#FF0000]  transition duration-300 ease-in-out"
                       >
                         {item.label}
@@ -97,11 +129,14 @@ const Navbar: React.FC = () => {
 
             </li>
 
-            <li className="relative group text-center border-b md:border-none border-gray-300 pb-2">
-              <Link href={`/${pathname.split("/")[1]}/services`} className="text-[#292B5B] text-[20px] font-[500] hover:text-[#FF0000]  transform hover:scale-110 transition-all duration-300 ease-in-out">
+            <li onMouseEnter={()=>setServDrop(true)} className="relative group text-center border-b md:border-none border-gray-300 pb-2">
+              <Link href={`/${pathname.split("/")[1]}/services`} 
+                onClick={(event) => event.preventDefault()} // Prevent navigation
+                className="text-[#292B5B] text-[20px] font-[500] hover:text-[#FF0000]  transform hover:scale-110 transition-all duration-300 ease-in-out">
                 {t("services")}
+
               </Link>
-              <div className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-lg p-4 border mt-2 w-96 text-sm">
+              <div onMouseLeave={()=>setServDrop(false)} className={`serv absolute left-0 top-16 bg-white shadow-lg rounded-lg p-4 border mt-2 w-96 text-sm ${servDrop ? "block" : "hidden"}`}>
                 <ul className="grid grid-cols-2 gap-4">
                   {[
                     t("servicesDropdown.hotel"),

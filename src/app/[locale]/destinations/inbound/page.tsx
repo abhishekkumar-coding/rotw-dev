@@ -1,14 +1,14 @@
 "use client"
 import React from "react";
-import FullScreenBackground from "../components/FullScreenBackground";// Import destinationsData from its defined file
 import { useTranslations } from "next-intl";
-import { DestinationSection } from "../components/DestinationSection";
+import FullScreenBackground from "../../components/FullScreenBackground";
+import { DestinationSection } from "../../components/DestinationSection";
 
 
 
 
 const Destinations: React.FC = () => {
-    const t = useTranslations("destinationsData")
+    const t = useTranslations("destinationsInbound")
 
     //images data
 

@@ -24,7 +24,7 @@ export const DestinationSection: React.FC<DestinationProps> = ({
             })}
         >
             {/* Text and Heading Section */}
-            <div className={clsx("w-full md:w-1/2 px-6 flex flex-col items-center space-y-5 justify-center py-6", { "md:items-start": index % 2 === 0, "md:items-end": index % 2 !== 0 })}>
+            <div className={clsx("w-full md:w-1/2 px-6 flex flex-col items-center space-y-12 justify-center py-6", { "md:items-start": index % 2 === 0, "md:items-end": index % 2 !== 0 })}>
                 {/* Heading for large screens */}
                 <h1 className="text-xl hidden md:block md:text-left md:mb-0 text-[#292B5B] md:text-3xl font-bold underline decoration-[#FF0000]">
                     {heading1}
